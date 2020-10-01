@@ -1,7 +1,9 @@
 .stages {
-    background-image: url(../image/paint.jpg);
+    background-image: url(../image/paintMobile.png);
     background-repeat: no-repeat;
-    background-position: 48% 662px;
+    background-position: -218px 680px;
+
+    padding-bottom: 122px;
 }
 
 .stages_title {
@@ -78,7 +80,6 @@
 
 .stages_form-container {
     padding-top: 7px;
-    padding-bottom: 100px;
 }
 
 .form {
@@ -163,10 +164,17 @@ input[type="checkbox"]:checked ~ .checkbox-label::before {
     margin-top: 17px;
 }
 
+@media (min-width: 500px) {
+    .stages {
+        background-image: url(../image/paintMobile.png);
+        background-position: -165px 615px;
+    }
+}
+
 @media (min-width: 768px) {
     .stages {
         background-image: url(../image/paintTablet.png);
-        background-position: 59% 586px;
+        background-position: -125px 605px;
     }
 
     .stages_list .stages_item:nth-child(2n){
@@ -204,6 +212,13 @@ input[type="checkbox"]:checked ~ .checkbox-label::before {
     .form_button {
         width: 100%;
         margin-top: 26px;
+    }
+}
+
+@media (min-width: 920px) {
+    .stages {
+        background-image: url(../image/paintTablet.png);
+        background-position: -30px 605px;
     }
 }
 
@@ -280,28 +295,24 @@ input[type="checkbox"]:checked ~ .checkbox-label::before {
 
 @media (min-width: 1200px) {
     .stages {
-        background-image: url(../image/paintDesktop.png);
         background-position: 420px -89px;
     }
 }
 
 @media (min-width: 1440px) {
     .stages {
-        background-image: url(../image/paintDesktop.png);
         background-position: 540px -89px;
     }
 }
 
 @media (min-width: 1440px) {
     .stages {
-        background-image: url(../image/paintDesktop.png);
         background-position: 660px -89px;
     }
 }
 
 @media (min-width: 1920px) {
     .stages {
-        background-image: url(../image/paintDesktop.png);
         background-position: 750px -89px;
     }
 

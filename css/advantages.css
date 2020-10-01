@@ -1,0 +1,160 @@
+.background-image {
+    position: relative;
+    background:url(../image/background-advantages.png) no-repeat;
+    background-position:  bottom;
+    height: 50%;
+}
+
+.background-image::after {
+    content: "";
+
+    position: absolute;
+    bottom: 45px;
+    left: 0;
+    width: 100%;
+    height: 53.5%;
+    background-color: rgb(247,248,150);
+    z-index: -1;
+}
+
+.advantages {
+    margin-top: 122px;
+}
+
+.advantages_title {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 48px;
+    margin-top: 0;
+}
+
+.advantages_list {
+    padding-bottom: 51px;
+}
+
+.advantages_item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+
+    padding-left: 132px;
+    padding-right: 14px;
+    margin-bottom: 30px;
+    min-height: 175px;
+
+    text-align: start;
+
+    background-color: white;
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.2);
+}
+
+.sertificate::after {
+    content: "";
+    width: 81px;
+    height: 80px;
+
+    position: absolute;
+    top: 47px;
+    left: 28px;
+
+    background-image: url(../image/sertificate.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.models-practic::after {
+    content: "";
+    width: 65px;
+    height: 81px;
+
+    position: absolute;
+    top: 47px;
+    left: 32px;
+
+    background-image: url(../image/models-practic.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.sale::after {
+    content: "";
+    width: 81px;
+    height: 81px;
+
+    position: absolute;
+    top: 47px;
+    left: 28px;
+
+    background-image: url(../image/sale.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.service::after {
+    content: "";
+    width: 84px;
+    height: 84px;
+
+    position: absolute;
+    top: 46px;
+    left: 25px;
+
+    background-image: url(../image/service.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.experts::after {
+    content: "";
+    width: 70px;
+    height: 70px;
+
+    position: absolute;
+    top: 52px;
+    left: 31px;
+
+    background-image: url(../image/experts.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.presents::after {
+    content: "";
+    width: 79px;
+    height: 79px;
+
+    position: absolute;
+    top: 49px;
+    left: 24px;
+
+    background-image: url(../image/presents.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+@media (min-width: 768px) {
+    .background-image::after {
+        height: 50.8%;
+    }
+
+    .advantages {
+        margin-top: 190px;
+    }
+    .advantages_title {
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .background-image::after {
+        height: 63.6%;
+    }
+}
+
+
+@media (min-width: 1920px) {
+    .background-image::after {
+        height: 62%;
+    }
+}

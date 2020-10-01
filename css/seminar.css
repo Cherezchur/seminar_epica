@@ -1,3 +1,19 @@
+.seminar {
+    position: relative;
+}
+.seminar::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    
+    position: absolute;
+    top: 85%;
+    left: -29px;
+
+    background-image: url(../image/phoneMobile.png);
+    background-repeat: no-repeat;
+}
+
 .seminar_item {
     position: relative;
     margin-bottom: 10px;
@@ -70,9 +86,9 @@
 
 .seminar_list .seminar_help-form {
     background-color: #be91e1;
-    background-image: url(../image/phoneMobile.png);
+    /* background-image: url(../image/phoneMobile.png);
     background-repeat: no-repeat;
-    background-position: -20px 25px;
+    background-position: -20px 25px; */
     background-size: contain;
     margin-bottom: 30px;
 }
