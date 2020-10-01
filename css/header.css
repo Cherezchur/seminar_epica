@@ -159,10 +159,6 @@
 }
 
 @media (min-width: 1024px) {
-    .container {
-        padding-left: 5.2%;
-        padding-right: 5.2%;
-    }
 
     .header_navbar-toggler {
         display: none;

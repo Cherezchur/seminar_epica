@@ -220,69 +220,71 @@
 
 
 <section id="stages" class="stages">
-	<div class="stages_container">
-		<h2 class="stages_title section-title">Как проходит семинар</h2>
-		<ul class="stages_list container">
-			<li class="stages_item">
-				<div class="stages_number-container">
-					<span class="stages_number">1</span>
-				</div>
-				<div class="stages_direction">Регистрация участников и знакомство</div>
-			</li>
-			<li class="stages_item">
-				<div class="stages_number-container">
-					<span class="stages_number">2</span>
-				</div>
-				<div class="stages_direction">Презентация продукции (до 1 часа)</div>
-			</li>
-			<li class="stages_item">
-				<div class="stages_number-container">
-					<span class="stages_number">3</span>
-				</div>
-				<div class="stages_direction">Практические занятия с отработкой на моделях</div>
-			</li>
-			<li class="stages_item">
-				<div class="stages_number-container">
-					<span class="stages_number">4</span>
-				</div>
-				<div class="stages_direction">Рубрика Вопрос-Ответ с технологом бренда</div>
-			</li>
-			<li class="stages_item">
-				<div class="stages_number-container">
-					<span class="stages_number">5</span>
-				</div>
-				<div class="stages_direction">Вручение сертификатов</div>
-			</li>
-		</ul>
-		<div class="stages_caption container">
-			<span>*Ориентировочная длительность семинара 5 часов</span>
+	<h2 class="stages_title section-title">Как проходит семинар</h2>
+	<div class="stages_container container">
+		<div class="stages_steps-container">
+			<ul class="stages_list container">
+				<li class="stages_item">
+					<div class="stages_number-container">
+						<span class="stages_number">1</span>
+					</div>
+					<div class="stages_direction">Регистрация участников и знакомство</div>
+				</li>
+				<li class="stages_item">
+					<div class="stages_number-container">
+						<span class="stages_number">2</span>
+					</div>
+					<div class="stages_direction">Презентация продукции (до 1 часа)</div>
+				</li>
+				<li class="stages_item">
+					<div class="stages_number-container">
+						<span class="stages_number">3</span>
+					</div>
+					<div class="stages_direction">Практические занятия с отработкой на моделях</div>
+				</li>
+				<li class="stages_item">
+					<div class="stages_number-container">
+						<span class="stages_number">4</span>
+					</div>
+					<div class="stages_direction">Рубрика Вопрос-Ответ с технологом бренда</div>
+				</li>
+				<li class="stages_item">
+					<div class="stages_number-container">
+						<span class="stages_number">5</span>
+					</div>
+					<div class="stages_direction">Вручение сертификатов</div>
+				</li>
+			</ul>
+			<div class="stages_caption">
+				<span>*Ориентировочная длительность семинара 5 часов</span>
+			</div>
 		</div>
-	</div>
-	<div class="stages_form-container">
-		<form class="form container" method="GET">
-			<legend>Связаться с нами</legend>
-			<div class="form_container">
-				<div class="form_input">
-					<input type="text" name="DATA[name]" placeholder="Как вас зовут?" autocomplete="off" required="">
+		<div class="stages_form-container">
+			<form class="form container" method="GET">
+				<legend>Связаться с нами</legend>
+				<div class="form_container">
+					<div class="form_input">
+						<input type="text" name="DATA[name]" placeholder="Как вас зовут?" autocomplete="off" required="">
+					</div>
+					<div class="form_input">
+						<input type="text" class="phone" name="DATA[phone]" placeholder="Ваш номер телефона?" required="">
+					</div>
+					<div class="form_input">
+						<textarea name="DATA[comments]" placeholder="Ваши коментарии" autocomplete="off" required="" rows="4"></textarea>
+					</div>
 				</div>
-				<div class="form_input">
-					<input type="text" class="phone" name="DATA[phone]" placeholder="Ваш номер телефона?" required="">
+				<div class="form_pravicy">
+					<div>
+						<input type="checkbox" class="checkbox visually-hidden" id="check" name="privacy" required="">
+						<label for="check" class="checkbox-label"></label>
+					</div>
+					<div class="checkbox-link">
+						<a href="https://epica-professional.com/privicy.html" target="blanc">С политикой конфиденциальности ознакомлен</a>
+					</div>
 				</div>
-				<div class="form_input">
-					<textarea name="DATA[comments]" placeholder="Ваши коментарии" autocomplete="off" required="" rows="4"></textarea>
-				</div>
-			</div>
-			<div class="form_pravicy">
-				<div>
-					<input type="checkbox" class="checkbox visually-hidden" id="check" name="privacy" required="">
-					<label for="check" class="checkbox-label"></label>
-				</div>
-				<div class="checkbox-link">
-					<a href="https://epica-professional.com/privicy.html" target="blanc">С политикой конфиденциальности ознакомлен</a>
-				</div>
-			</div>
-			<button type="submit" class="form_button button">Записаться!</button>
-		</form>
+				<button type="submit" class="form_button button">Записаться!</button>
+			</form>
+		</div>
 	</div>
 </section>
 

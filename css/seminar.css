@@ -148,6 +148,23 @@
         background-image: url(../image/phoneTablet.png);
         background-position: 0 50px;
     }
+
+    .seminar_text-content {
+        height: 141px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .seminar_text-content:active,
+    .seminar_text-content:hover {
+        height: auto;
+    }
+
+    .seminar_text-content h3 {
+        padding-top: 5px;
+        font-size: 26px;
+        line-height: 34px;
+    }
 }
 
 @media (min-width: 1920px) {

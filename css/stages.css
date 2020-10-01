@@ -6,7 +6,11 @@
 
 .stages_title {
     margin: 0;
-    padding-top: 28px;
+    padding-top: 53px;
+}
+
+.stages_list {
+    padding: 0;
 }
 
 .stages_item {
@@ -73,17 +77,14 @@
 }
 
 .stages_form-container {
-    /* background-image: url(../image/paint.jpg);
-    background-repeat: no-repeat;
-    background-position: -218px -123px; */
     padding-top: 7px;
     padding-bottom: 100px;
 }
 
 .form {
     margin: 0 auto;
-    margin-left: 20px;
-    margin-right: 20px;
+    /* margin-left: 20px;
+    margin-right: 20px; */
     margin-top: 40px;
     padding: 28px;
 
@@ -94,7 +95,7 @@
 .form legend {
     margin: 0 auto;
     margin-bottom: 20px;
-    margin-top: 5px;
+    /* margin-top: 5px; */
     font-family: "SolomonSans-Bold", sans-serif;
     font-size: 20px;
     line-height: 26px;
@@ -164,7 +165,8 @@ input[type="checkbox"]:checked ~ .checkbox-label::before {
 
 @media (min-width: 768px) {
     .stages {
-        background-position: 48% 562px;
+        background-image: url(../image/paintTablet.png);
+        background-position: 59% 586px;
     }
 
     .stages_list .stages_item:nth-child(2n){
@@ -183,13 +185,159 @@ input[type="checkbox"]:checked ~ .checkbox-label::before {
         max-width: 450px;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 90px;
+        padding: 45px;
+        padding-top: 30px;
+        box-sizing: border-box;
+    }
+
+    .form legend {
+        font-size: 26px;
+        line-height: 34px;
+        margin-bottom: 30px;
+    }
+
+    .form textarea {
+        margin-bottom: 15px;
+    }
+
+    .form_button {
+        width: 100%;
+        margin-top: 26px;
     }
 }
 
 @media (min-width: 1024px) {
+    .stages {
+        background-image: url(../image/paintDesktop.png);
+        background-position: 277px -89px;
+    }
+
+    .stages_container {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 47px;
+        padding-right: 47px;
+    }
+
+    .stages_steps-container,
+    .stages_form-container {
+        width: 50%;
+    }
+
+    .stages_steps-container {
+        max-width: 450px;
+    }
+
+    .stages_list {
+        padding: 0;
+    }
+
+    .stages_item .stages_direction {
+        width: 47%;
+    }
+
+    .stages_list .stages_item:nth-child(2n) {
+        margin-left: 82px;
+    }
+
+    .stages_item:nth-child(2n) .stages_direction {
+        width: 57%;
+    }
+
+    .stages_number-container::before {
+        width: 120px;
+    }
+
+    .stages_item:nth-child(2n) .stages_number-container::before {
+        width: 40px;
+    }
+
+    .stages_number-container::after {
+        left: 200px;
+    }
+
+    .stages_item:nth-child(2n) .stages_number-container::after {
+        left: 120px;
+    }
+
+    .stages_caption {
+        padding: 0;
+    }
+
+    .stages_form-container {
+        max-width: 450px;
+        padding-top: 0;
+    }
+
+    .form {
+        max-width: 370px;
+        margin: 0;
+        margin-left: auto;
+    }
 
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1200px) {
+    .stages {
+        background-image: url(../image/paintDesktop.png);
+        background-position: 420px -89px;
+    }
+}
 
+@media (min-width: 1440px) {
+    .stages {
+        background-image: url(../image/paintDesktop.png);
+        background-position: 540px -89px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .stages {
+        background-image: url(../image/paintDesktop.png);
+        background-position: 660px -89px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .stages {
+        background-image: url(../image/paintDesktop.png);
+        background-position: 750px -89px;
+    }
+
+    .stages_steps-container {
+        max-width: 510px;
+    }
+
+    .stages_list .stages_item:nth-child(2n) {
+        margin-left: 60px;
+    }
+
+    .stages_item .stages_direction {
+        width: 45%;
+    }
+
+    .stages_item:nth-child(2n) .stages_direction {
+        width: 51%;
+    }
+
+    .form {
+        max-width: 450px;
+    }
+
+    .stages_number-container::before {
+        width: 165px;
+    }
+
+    .stages_item:nth-child(2n) .stages_number-container::before {
+        width: 110px;
+    }
+
+    .stages_number-container::after {
+        left: 240px;
+    }
+
+    .stages_item:nth-child(2n) .stages_number-container::after {
+        left: 180px;
+    }
 }

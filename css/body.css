@@ -67,3 +67,24 @@ ul {
   padding-right: 42px;
   margin-top: 10px;
 }
+
+@media (min-width: 768px) {
+  .section-title {
+    font-size: 58px;
+    line-height: 75px;
+  
+    padding-top: 84px;
+    padding-bottom: 64px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding-left: 47px;
+    padding-right: 47px;
+  }
+}
+
+@media (min-width: 1920px) {
+
+}
