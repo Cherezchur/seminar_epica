@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="99.5%" height="150" viewBox="0 0 100% 150">
+  <g id="Pluses" transform="translate(-547.5 -719)">
+    <g id="_3" data-name="3" transform="translate(807.5 90)">
+      <g id="Bg" transform="translate(-260 629)" fill="rgba(190,145,225,0.8)" stroke="#9d6ad1" stroke-width="1">
+        <rect width="99.5%" height="150" rx="25" stroke="none"/>
+        <rect x="0.5" y="0.5" width="99.5%" height="149" rx="24.5" fill="none"/>
+      </g>
+    </g>
+    <g id="_2" data-name="2" transform="translate(427.5 90)">
+      <g id="Bg-2" data-name="Bg" transform="translate(120 629)" fill="rgba(190,145,225,0.8)" stroke="#9d6ad1" stroke-width="1">
+        <rect width="99.5%" height="100" rx="25" stroke="none"/>
+        <rect x="0.5" y="0.5" width="99.5%" height="99" rx="24.5" fill="none"/>
+      </g>
+    </g>
+    <g id="_1" data-name="1" transform="translate(142.5 90)">
+      <g id="Bg-3" data-name="Bg" transform="translate(405 629)" fill="rgba(190,145,225,0.8)" stroke="#9d6ad1" stroke-width="1">
+        <rect width="99.5%" height="50" rx="25" stroke="none"/>
+        <rect x="0.5" y="0.5" width="99.5%" height="49" rx="24.5" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

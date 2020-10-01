@@ -1,0 +1,28 @@
+@font-face {
+    font-family: "SolomonSans-Medium";
+    font-style: normal;
+    font-weight: 400;
+    src: local("SolomonSans-Medium"),
+         url("../fonts/SolomonSans-Medium.ttf") format("truetype");
+  }
+@font-face {
+    font-family: "SolomonSans-Bold";
+    font-style: normal;
+    font-weight: 700;
+    src: local("SolomonSans-Bold"),
+         url("../fonts/SolomonSans-Bold.ttf") format("truetype");
+  }
+@font-face {
+    font-family: "SolomonSans-MediumItalic";
+    font-style: normal;
+    font-weight: 400;
+    src: local("SolomonSans-MediumItalic"),
+         url("../fonts/SolomonSans-MediumItalic.ttf") format("truetype");
+  }
+@font-face {
+    font-family: "SolomonSans-BoldItalic";
+    font-style: normal;
+    font-weight: 700;
+    src: local("SolomonSans-BoldItalic"),
+         url("../fonts/SolomonSans-BoldItalic.ttf") format("truetype");
+  }

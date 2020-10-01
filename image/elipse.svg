@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+  <g id="Ring" fill="#fff" stroke="#252525" stroke-width="1">
+    <rect width="80" height="80" rx="40" stroke="none"/>
+    <rect x="0.5" y="0.5" width="79" height="79" rx="39.5" fill="none"/>
+  </g>
+</svg>
