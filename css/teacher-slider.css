@@ -1,30 +1,64 @@
-.slide-control {
-    display: none;
+.teachers {
+    margin-bottom: 120px;
+}
+
+.teachers_title {
+    padding: 0;
+    margin: 0;
+    margin-top: 12px;
+    margin-bottom: 21px;
 }
 
 .slider-container {
     display: flex;
+    justify-content: center;
 }
 
-.teachers_arrow-next {
+.teachers_arrow-next,
+.teachers_arrow-prev {
     position: relative;
     width: 75px;
     height: 210px;
 }
 
-.teachers_arrow-next label {
+.teachers_arrow-next::after {
+    content: "";
+    width: 37px;
+    height: 10px;
+
     position: absolute;
-    visibility: hidden;
-    cursor: pointer;
-    top: 45%;
-    font-size: 80px;
-    background-image: url(../image/next.svg);
+    top: 108px;
+    right: 20.5px;
+
+    background-image: url(../image/prev.svg);
+    background-position: 0 0;
     background-repeat: no-repeat;
+    transform: rotate(180deg);
+    cursor: pointer;
+    opacity: 0.2;
 }
 
-.teachers_arrow-prev {
-    width: 75px;
-    height: 50px;
+.teachers_arrow-prev::after {
+    content: "";
+    width: 37px;
+    height: 10px;
+
+    position: absolute;
+    top: 101px;
+    left: 20.5px;
+
+    background-image: url(../image/prev.svg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    opacity: 0.2;
+}
+
+.teachers_arrow-next:hover::after,
+.teachers_arrow-next:active::after,
+.teachers_arrow-prev:hover::after,
+.teachers_arrow-prev:active::after {
+    opacity: 1;
 }
 
 .teachers_container {
@@ -40,4 +74,64 @@
 
 .teachers_item {
     width: 210px;
+}
+
+.teachers_name {
+    margin-top: 7px;
+    margin-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.teachers_status {
+    margin: 0;
+    opacity: 0.5;
+}
+
+.teachers_dots-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 23px;
+}
+
+.teachers_dot {
+    padding: 0;
+    margin-right: 11px;
+    width: 9px;
+    height: 9px;
+    background-color: transparent;
+    border: 1px solid rgba(1,1,1,0.5);
+    border-radius: 50%;
+}
+
+.teachers_dots-list .active {
+    padding: 0;
+    margin-right: 11px;
+    width: 11px;
+    height: 11px;
+    background-color: transparent;
+    border: 1px solid rgba(1,1,1,1);
+    border-radius: 50%;
+}
+
+.last-dot .teachers_dot {
+    margin-right: 0;
+}
+
+@media (min-width: 768px) {
+    .teachers_title {
+        margin-top: 34px;
+    }
+
+    .teachers_item {
+        width: 330px;
+    }
+}
+
+@media (min-width: 1024px) {
+    
+}
+
+@media (min-width: 1920px) {
+    
 }
