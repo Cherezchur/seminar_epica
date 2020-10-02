@@ -1,0 +1,43 @@
+.slide-control {
+    display: none;
+}
+
+.slider-container {
+    display: flex;
+}
+
+.teachers_arrow-next {
+    position: relative;
+    width: 75px;
+    height: 210px;
+}
+
+.teachers_arrow-next label {
+    position: absolute;
+    visibility: hidden;
+    cursor: pointer;
+    top: 45%;
+    font-size: 80px;
+    background-image: url(../image/next.svg);
+    background-repeat: no-repeat;
+}
+
+.teachers_arrow-prev {
+    width: 75px;
+    height: 50px;
+}
+
+.teachers_container {
+    overflow: hidden;
+    width: 210px;
+}
+
+.teachers_list {
+    width: 1680px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.teachers_item {
+    width: 210px;
+}
