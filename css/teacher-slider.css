@@ -66,6 +66,10 @@
     width: 210px;
 }
 
+.teachers_container::-webkit-scrollbar {
+    width: 0px;
+}
+
 .teachers_list {
     width: 1680px;
     display: flex;

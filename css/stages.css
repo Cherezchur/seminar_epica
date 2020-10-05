@@ -112,6 +112,14 @@
     margin-bottom: 20px;
 
     border: 1px solid rgba(1, 1, 1, 0.1);
+    outline: none;
+}
+
+.form input:focus,
+.form textarea:focus,
+.form input:active,
+.form textarea:active {
+    border: 1px solid rgba(1, 1, 1, 0.5);
 }
 
 .form input::placeholder,
@@ -149,6 +157,10 @@ input[type="checkbox"]:checked ~ .checkbox-label::before {
     background-image: url(../image/check.svg);
     background-repeat: no-repeat;
     background-position: 2px 4px;
+}
+
+input[type="checkbox"]:focus ~ .checkbox-label {
+    border: 1px solid #262626;
 }
 
 .checkbox-link {

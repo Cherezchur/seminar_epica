@@ -86,9 +86,6 @@
 
 .seminar_list .seminar_help-form {
     background-color: #be91e1;
-    /* background-image: url(../image/phoneMobile.png);
-    background-repeat: no-repeat;
-    background-position: -20px 25px; */
     background-size: contain;
     margin-bottom: 30px;
 }
@@ -180,7 +177,7 @@
     }
 
     .seminar::after {
-        background-image: none;
+        display: none;
     }
 
     .seminar_item {
