@@ -1,4 +1,25 @@
-.gallery img {
+.gallery_list {
+    height: 935px;
+    overflow: hidden;
+}
+
+.gallery_item {
+    margin: 0 auto;
+    width: 294px;
+    height: 80px;
+}
+
+.image1 {
+    background: url(../image/gallery1Mob.jpg) no-repeat center;
+}
+
+.image2 {
+    background: url(../image/gallery2Mob.jpg) no-repeat center;
+}
+
+.active-image {
     width: 294px;
     height: 294px;
 }
+
+
