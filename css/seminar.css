@@ -14,6 +14,8 @@
     background-repeat: no-repeat;
 }
 
+/* исправить наложние на весь контент */ 
+
 .seminar_item {
     position: relative;
     margin-bottom: 10px;

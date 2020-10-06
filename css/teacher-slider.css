@@ -1,5 +1,5 @@
 .teachers {
-    margin-bottom: 88px;
+    margin-bottom: 57px;
 }
 
 .teachers_title {
@@ -161,6 +161,9 @@
 }
 
 @media (min-width: 1024px) {
+    .teachers {
+        margin-bottom: 88px;
+    }
     .slider-container {
         margin-top: 88px;
     }
