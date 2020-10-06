@@ -1,6 +1,15 @@
+.gallery_title {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 48px;
+}
+
 .gallery_list {
+    width: 294px;
     height: 935px;
     overflow: hidden;
+    margin: 0 auto;
+    border: 14px solid rgba(1,1,1,0.1) ;
 }
 
 .gallery_item {
@@ -17,9 +26,215 @@
     background: url(../image/gallery2Mob.jpg) no-repeat center;
 }
 
+.image3 {
+    background: url(../image/gallery3Mob.jpg) no-repeat center;
+}
+
+.image4 {
+    background: url(../image/gallery4Mob.jpg) no-repeat center;
+}
+
+.image5 {
+    background: url(../image/gallery5Mob.jpg) no-repeat center;
+}
+
+.image6 {
+    background: url(../image/gallery6Mob.jpg) no-repeat center;
+}
+
+.image7 {
+    background: url(../image/gallery7Mob.jpg) no-repeat center;
+}
+
+.image8 {
+    background: url(../image/gallery8Mob.jpg) no-repeat center;
+}
+
+.image9 {
+    background: url(../image/gallery1Mob.jpg) no-repeat center;
+}
+
 .active-image {
     width: 294px;
     height: 294px;
 }
 
+@media (min-width: 768px) {
+    .gallery_list {
+        width: 630px;
+        height: 2310px;
+        border: 30px solid rgba(1,1,1,0.1);
+    }
 
+    .gallery_item {
+        margin: 0 auto;
+        width: 630px;
+        height: 210px;
+    }
+
+    .image1 {
+        background: url(../image/gallery1Tab.jpg) no-repeat center;
+    }
+    
+    .image2 {
+        background: url(../image/gallery2Tab.jpg) no-repeat center;
+    }
+    
+    .image3 {
+        background: url(../image/gallery3Tab.jpg) no-repeat center;
+    }
+    
+    .image4 {
+        background: url(../image/gallery4Tab.jpg) no-repeat center;
+    }
+    
+    .image5 {
+        background: url(../image/gallery5Tab.jpg) no-repeat center;
+    }
+    
+    .image6 {
+        background: url(../image/gallery6Tab.jpg) no-repeat center;
+    }
+    
+    .image7 {
+        background: url(../image/gallery7Tab.jpg) no-repeat center;
+    }
+    
+    .image8 {
+        background: url(../image/gallery8Tab.jpg) no-repeat center;
+    }
+    
+    .image9 {
+        background: url(../image/gallery1Tab.jpg) no-repeat center;
+    }
+
+    .active-image {
+        width: 630px;
+        height: 630px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .gallery_container {
+        margin-left: 47px;
+        margin-top: 62px;
+        overflow-x: auto;
+        border: 32px solid rgba(1,1,1,0.1);
+        border-right: none;
+    }
+
+    .gallery_list {
+        display: flex;
+        width: 1500px;
+        height: 450px;
+        border: none;
+    }
+
+    .gallery_item {
+        margin: 0 auto;
+        width: 150px;
+        height: 450px;
+    }
+
+    .image1 {
+        background: url(../image/gallery1Lap.jpg) no-repeat center;
+    }
+    
+    .image2 {
+        background: url(../image/gallery2Lap.jpg) no-repeat center;
+    }
+    
+    .image3 {
+        background: url(../image/gallery3Lap.jpg) no-repeat center;
+    }
+    
+    .image4 {
+        background: url(../image/gallery4Lap.jpg) no-repeat center;
+    }
+    
+    .image5 {
+        background: url(../image/gallery5Lap.jpg) no-repeat center;
+    }
+    
+    .image6 {
+        background: url(../image/gallery6Lap.jpg) no-repeat center;
+    }
+    
+    .image7 {
+        background: url(../image/gallery7Lap.jpg) no-repeat center;
+    }
+    
+    .image8 {
+        background: url(../image/gallery8Lap.jpg) no-repeat center;
+    }
+    
+    .image9 {
+        background: url(../image/gallery1Lap.jpg) no-repeat center;
+    }
+
+    .active-image {
+        width: 450px;
+        height: 450px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .gallery_container {
+        margin-left: 160px;
+        margin-top: 62px;
+        border: 32px solid rgba(1,1,1,0.1);
+        border-right: none;
+    }
+
+    .gallery_list {
+        width: 1980px;
+        height: 540px;
+    }
+
+    .gallery_item {
+        margin: 0 auto;
+        width: 180px;
+        height: 540px;
+    }
+
+    .image1 {
+        background: url(../image/gallery1Des.jpg) no-repeat center;
+    }
+    
+    .image2 {
+        background: url(../image/gallery2Des.jpg) no-repeat center;
+    }
+    
+    .image3 {
+        background: url(../image/gallery3Des.jpg) no-repeat center;
+    }
+    
+    .image4 {
+        background: url(../image/gallery4Des.jpg) no-repeat center;
+    }
+    
+    .image5 {
+        background: url(../image/gallery5Des.jpg) no-repeat center;
+    }
+    
+    .image6 {
+        background: url(../image/gallery6Des.jpg) no-repeat center;
+    }
+    
+    .image7 {
+        background: url(../image/gallery7Des.jpg) no-repeat center;
+    }
+    
+    .image8 {
+        background: url(../image/gallery8Des.jpg) no-repeat center;
+    }
+    
+    .image9 {
+        background: url(../image/gallery1Des.jpg) no-repeat center;
+    }
+
+    .active-image {
+        width: 540px;
+        height: 540px;
+    }
+}
