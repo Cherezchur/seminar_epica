@@ -1,0 +1,318 @@
+.review_slider {
+    position: relative;
+    background-color: #BE91E1;
+    text-align: start;
+}
+
+.review_slider::after {
+    content: "";
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: -203px;
+    bottom: 0;
+    right: 0;
+    width: 420px;
+    height: 704px;
+    background: url(../image/Palm_mob.png) no-repeat center;
+    z-index: 1;
+}
+
+.review_slider::before {
+    content: "";
+    position: absolute;
+    margin: auto;
+    top: 250px;
+    left: 200px;
+    bottom: 0;
+    right: 0;
+    width: 160px;
+    height: 300px;
+    background: url(../image/Palm_mob_small.png) no-repeat center;
+    z-index: 1;
+}
+
+.review_title {
+    padding-bottom: 47px;
+    width: 322px;
+    margin: 0 auto;
+}
+
+.review_container {
+    position: relative;
+    margin: 0 auto;
+    width: 360px;
+    overflow-x: auto;
+    z-index: 2;
+}
+
+.review_list-slider {
+    display: flex;
+    width: 2520px;
+    margin: 0 auto;
+    overflow-x: auto;
+}
+
+.review_item-slide {
+    width: 322px;
+    margin-left: 19px;
+    margin-right: 19px;
+}
+
+.review_item-slide picture {
+    display: flex;
+    justify-content: center;
+}
+
+.review_item-slide img {
+    border: 12.3px solid white;
+    border-radius: 54px;
+    background-color: darkgrey;
+}
+
+.review_slide-title {
+    margin-top: 25px;
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.review_slide-discriprtion {
+    margin-top: 12px;
+}
+
+.review_control-container {
+    display: flex;
+    justify-content: start;
+    width: 322px;
+    margin: 0 auto;
+    margin-top: 9px;
+    padding-bottom: 70px;
+}
+
+.review_number {
+    position: relative;
+}
+
+.review_number::before {
+    content: "01";
+}
+
+.review_number::after {
+    content: "";
+    width: 20px;
+    height: 1px;
+
+    position: absolute;
+    top: 11px;
+    left: 25px;
+
+    background-color: #262626;
+}
+
+.review_control-list {
+    display: flex;
+    margin-left: 42px;
+}
+
+.review_control-list input {
+    display: none;
+}
+
+.review_dot {
+    position: relative;
+    margin-right: 20px;
+}
+
+.review_dot::after {
+    content: "";
+
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 10px;
+    height: 10px;
+
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 1px solid rgba(1,1,1,0.5);
+    border-radius: 50%;
+}
+
+input[type="radio"]:checked ~ label:after {
+    top: 3px;
+    left: -2px;
+    box-sizing: content-box;
+    border: 2px solid rgba(1,1,1,1);
+}
+
+@media (min-width: 768px) {
+    .review_title {
+        width: 690px;
+        padding-top: 87px;
+        padding-bottom: 84px;
+    }
+
+    .review_container {
+        width: 690px;
+    }
+
+    .review_list-slider {
+        width: 4830px;
+    }
+
+    .review_slide-title {
+        margin-top: 36px;
+    }
+
+    .review_item-slide {
+        width: 690px;
+        margin: 0 auto;
+    }
+
+    .review_control-container {
+        width: 690px;
+        margin-top: 30px;
+        padding-bottom: 98px;
+    }
+
+    .review_slider::after {
+        top: 125px;
+    }
+    
+    .review_slider::before {
+        top: 400px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .review_laptop-container {
+        position: relative;
+        width: 1024px;
+        margin: 0 auto;
+    }
+
+    .review_title {
+        font-size: 60px;
+        line-height: 70px;
+
+        width: 450px;
+        position: absolute;
+        left: 527px;
+        padding-top: 90px;
+    }
+
+    .review_container {
+        width: 885px;
+        padding-top: 73px;
+        padding-bottom: 66px;
+    }
+
+    .review_list-slider {
+        width: 6195px;
+    }
+
+    .review_item-slide {
+        display: flex;
+        justify-content: space-between;
+        width: 885px;
+    }
+
+    .review_item-slide picture {
+        padding-left: 20px;
+    }
+
+    .review_item-slide img {
+        border: 16.5px solid white;    
+    }
+
+    .review_text {
+        width: 427px;
+        margin-bottom: 128px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .review_control-container {
+        width: 450px;
+        position: absolute;
+        z-index: 2;
+        left: 527px;
+        top: 416px;
+    }
+
+    .review_slider::after {
+        top: 97px;
+        left: -790px;
+        width: 956px;
+        height: 941px;
+        background: url(../image/Palm_lap.png) no-repeat center;
+    }
+    
+    .review_slider::before {
+        top: 450px;
+        left: -225px;
+        width: 429px;
+        height: 422px;
+        background: url(../image/Palm_lap_small.png) no-repeat center;
+    }
+}
+
+@media (min-width: 1920px) {
+    .review_title {
+        font-size: 58px;
+        line-height: 75px;
+
+        width: 350px;
+        top: 65px;
+        left: 717px;
+        padding-top: 90px;
+    }
+
+    .review_container {
+        width: 940px;
+        margin-left: 106px;
+        padding-top: 67px;
+        padding-bottom: 80px;
+    }
+
+    .review_list-slider {
+        width: 6580px;
+    }
+
+    .review_item-slide {
+        width: 940px;
+    }
+
+    .review_item-slide img {
+        border: 20px solid white;    
+    }
+
+    .review_text {
+        width: 330px;
+        margin-top: 162px;
+        padding-left: 20px;
+    }
+
+    .review_control-container {
+        width: 350px;
+        left: 719px;
+        top: 583px;
+    }
+
+    .review_slider::after {
+        top: 97px;
+        left: -790px;
+        width: 956px;
+        height: 941px;
+        background: url(../image/Palm_des.png) no-repeat center;
+    }
+    
+    .review_slider::before {
+        top: 500px;
+        left: 0;
+        background: url(../image/Palm_des_small.png) no-repeat center;
+    }
+}

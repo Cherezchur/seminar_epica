@@ -1,8 +1,16 @@
+.submit {
+    margin-bottom: 68px;
+}
+
 .submit_title {
     padding: 0;
     margin-top: 20px;
     margin-bottom: 18px;
     text-align: start;
+}
+
+.submit img {
+    width: 322px;
 }
 
 .submit_container {
@@ -11,7 +19,7 @@
     width: 322px;
     margin: 0 auto;
     margin-top: -5px;
-    padding-left: 27px;
+    padding-left: 12px;
     padding-bottom: 30px;
     
     box-sizing: border-box;
@@ -25,6 +33,9 @@
 }
 
 @media (min-width: 768px) {
+    .submit {
+        margin-bottom: 93px;
+    }
 
     .submit img {
         width: 690px;
@@ -47,6 +58,9 @@
         display: flex;
         justify-content: center;
         max-width: 1600px;
+        margin-left: 47px;
+        margin-right: 47px;
+        margin-bottom: 96px;
     }
 
     .submit picture{
@@ -74,5 +88,25 @@
 
     .text-off {
         display: none;
+    }
+}
+
+@media (min-width: 1694px) {
+    .submit  {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 1920px) {
+    .submit_container {
+        height: 600px;
+        padding-left: 244px;
+        padding-right: 85px;
+        padding-top: 65px;
+    }
+
+    .submit img {
+        height: 600px;
     }
 }
