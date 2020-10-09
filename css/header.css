@@ -1,4 +1,4 @@
-#head {
+.header {
     font-family: "SolomonSans-Medium", sans-serif;
     color: white;
 }
@@ -15,7 +15,7 @@
     background-color: #5c4c69;
 }
 
-.header_image-logo {
+.image-logo {
     padding-top: 20px;
     padding-bottom: 12px;
 }
