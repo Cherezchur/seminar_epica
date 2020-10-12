@@ -33,7 +33,7 @@
     margin-bottom: 2px;
 }
 
-.header_brand-contacts .contacts-title {
+.header_brand-contacts .contacts-adres {
     line-height: 19px;
 }
 
@@ -124,6 +124,9 @@
 }
 
 @media (min-width: 768px) {
+    .header_nav {
+        height: 100px;
+    }
     .header_container-nav {
         display: flex;
         justify-content: space-between;
@@ -140,6 +143,11 @@
 
         align-items: flex-end;
         margin: auto 0;
+        margin-top: 26px;
+    }
+
+    .header_brand-contacts .contacts-adres {
+        margin: 0 auto;
     }
 
     .header_container-menu::after {

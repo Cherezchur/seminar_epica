@@ -1,0 +1,176 @@
+.header_menu {
+    background-color: rgba(1,1,1,0.8);
+}
+
+.seminar-des {
+    padding-bottom: 70px;
+}
+
+.seminar-des_header {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: -1;
+    background: center / cover no-repeat url(../image/seminarMob.jpg);
+    height: 490px;
+    margin-top: -50px;
+}
+
+.seminar-des_header h2 {
+    font-size: 44px;
+    line-height: 57px;
+    text-align: start;
+    color: white;
+
+    padding-left: 19px;
+    margin-top: 53px;
+}
+
+.seminar-des_container {
+    width: 322px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border: 1px solid rgba(1, 1, 1, 0.1);
+}
+
+.seminar-des_button {
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgba(1, 1, 1, 0.1);
+    background-color: rgba(1, 1, 1, 0.05);
+
+    margin-top: 0;
+}
+
+.seminar-des_buttons .active-button {
+    background-color: white;
+}
+
+.seminar-des_tabs-list {
+    padding-top: 7px;
+    padding-left: 28px;
+    padding-right: 28px;
+    text-align: start;
+}
+
+.seminar-des_item {
+    display: none;
+    padding-bottom: 20px;
+}
+
+.seminar-des_tabs-list .active-tab {
+    display: block;
+}
+
+.seminar-des_description {
+    margin: 0;
+    margin-top: 15px;
+    margin-bottom: 21px;
+}
+
+.seminar-des_info {
+    margin: 0;
+    margin-top: -5px;
+    margin-bottom: 15px;
+    color: #be92e1;
+}
+
+.seminar-des_info strong {
+    color: #252525;
+}
+
+.seminar-des_button {
+    width: 322px;
+}
+
+.seminar-des_submit-container {
+    width: 322px;
+    margin: 0 auto;
+}
+
+.seminar-des_submit {
+    display: flex;
+    margin-left: auto;
+    margin-top: 30px;
+    padding-left: 22px;
+    padding-right: 22px;
+
+    border: 1px solid rgba(1, 1, 1, 0.1);
+}
+
+@media (min-width: 768px) {
+    .seminar-des {
+        margin-bottom: 30px;
+    }
+
+    .seminar-des_header {
+        background: center / cover no-repeat url(../image/seminarTab.jpg);
+        height: 550px;
+    }
+
+    .seminar-des_header h2 {
+        font-size: 58px;
+        line-height: 75px;
+
+        padding-left: 38px;
+        padding-right: 38px;
+        margin-top: 35px;
+    }
+
+    .seminar-des_container {
+        width: 690px;
+        margin-top: 70px; 
+        border: none;   
+    }
+
+    .seminar-des_buttons {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .seminar-des_button {
+        width: 210px;
+        border: 1px solid rgba(1, 1, 1, 0.1);
+        border-bottom: none;
+    }
+
+    .seminar-des_tabs-list {
+        border: 1px solid rgba(1, 1, 1, 0.1);
+        margin-top: -1px;
+        padding-top: 22px;
+        padding-left: 40px;
+    }
+
+    .seminar-des_item {
+        padding-bottom: 24px;
+    }
+
+    .seminar-des_item img {
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .seminar-des_submit-container {
+        width: 690px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .seminar-des_header {
+        margin-top: -52px;
+        background: center / cover no-repeat url(../image/seminarTab.jpg);
+    }
+
+    .seminar-des_container {
+        width: 930px;
+    }
+
+    .seminar-des_buttons {
+        width: 660px;
+    }
+
+    .seminar-des_submit-container {
+        width: 930px;
+    }
+}
