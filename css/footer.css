@@ -3,11 +3,17 @@
 }
 
 .info_map iframe {
+    width: 100%;
     border: none;
 }
 
 .info {
     background-color: #be92e1;
+}
+
+.info_container {
+    width: 100%;
+    height: 300px;
 }
 
 .contacts_intro {
@@ -19,7 +25,7 @@
     padding-top: 30px;
 }
 
-.contacts_container {
+.contacts_adres {
     margin-bottom: 31px;
 }
 
@@ -62,4 +68,121 @@
 .copyright {
     margin-top: -9px;
     color: #808080;
+}
+
+@media (min-width: 768px) {
+    .info_map div {
+        width: 100%;
+    }
+
+    .info_map iframe {
+        width: 100%;
+    }
+
+    .info_contacts {
+        display: flex;
+        padding-left: 41px;
+        padding-top: 51px;
+        padding-bottom: 55px;
+    }
+
+    .contacts_container {
+        width: 58%;
+    }
+
+    .contacts_button {
+        margin-top: 20px;
+        height: 60px;
+    }
+
+    .copyright_center {
+        display: flex;
+    }
+
+    .copyright_container .logo-link {
+        width: 28%;
+        margin-right: 22px;
+        margin-left: 16px;
+    }
+
+    .copyright {
+        margin-top: 17px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .info {
+        display: flex;
+    }
+
+    .info .info_container {
+        height: 600px;
+    }
+
+    .info_map {
+        width: 50%;
+    }
+
+    .info_map iframe {
+        height: 100%;
+    }
+
+    .info_contacts {
+        display: block;
+        padding-left: 95px;
+        padding-top: 78px;
+    }
+
+    .contacts_container {
+        display: block;
+        width: 100%;
+    }
+
+    .contacts_adres {
+        margin-bottom: 51px;
+    }
+
+    .contacts_button {
+        margin-top: 45px;
+    }
+
+    .copyright_container {
+        height: 70px;
+        padding: 0;
+        padding-left: 25px;
+    }
+
+    .copyright_container .logo-link {
+        width: 17%;
+    }
+}
+
+@media (min-width: 1920px) {
+
+    .info_contacts {
+        padding-left: 110px;
+    }
+
+    .contacts_adres {
+        margin-bottom: 53px;
+    }
+
+    .copyright_container {
+        padding-left: 0;
+    }
+
+    .copyright_center {
+        width: 1100px;
+        margin: 0 auto;
+    }
+
+    .copyright_container .logo-link {
+        margin-right: 0;
+        margin-left: 0;
+        width: 15%;
+    }
+
+    .copyright {
+        margin-top: 23px;
+    }
 }
