@@ -64,7 +64,7 @@ ul {
 
 .button {
   background-color: transparent;
-  border: 1px solid #333333;
+  border: 1px solid #252525;
   text-transform: uppercase;
 
   padding-top: 20px;
@@ -72,6 +72,14 @@ ul {
   padding-left: 42px;
   padding-right: 42px;
   margin-top: 10px;
+}
+
+.button:active,
+.button:hover,
+.button:focus {
+    outline: none;
+    color: white;
+    background-color: #252525;
 }
 
 @media (min-width: 768px) {

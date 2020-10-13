@@ -117,6 +117,7 @@
 .header_main-list a:active,
 .header_main-list a:hover {
     color: #be91e1;
+    outline: none;
 }
 
 .header_main-list li {

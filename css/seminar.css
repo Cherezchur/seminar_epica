@@ -77,6 +77,14 @@
     text-decoration: none;
 }
 
+.seminar_hidden .button:active,
+.seminar_hidden .button:focus, 
+.seminar_hidden .button:hover {
+    outline: none;
+    color: #252525;
+    background-color: white;
+}
+
 .seminar_text-info {
     font-family: "SolomonSans-BoldItalic", sans-serif;
     line-height: 30px;

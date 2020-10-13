@@ -1,3 +1,7 @@
+.reviews {
+    position: relative;
+}
+
 .review_slider {
     position: relative;
     background-color: #BE91E1;
@@ -57,6 +61,8 @@
     width: 322px;
     margin-left: 19px;
     margin-right: 19px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .review_item-slide picture {
@@ -68,6 +74,7 @@
     border: 12.3px solid white;
     border-radius: 54px;
     background-color: darkgrey;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
 }
 
 .review_slide-title {
@@ -148,6 +155,21 @@ input[type="radio"]:checked ~ label:after {
 }
 
 @media (min-width: 768px) {
+
+    .reviews::after {
+        content: "";
+    
+        position: absolute;
+        top: 830px;
+        left: -235px;
+        z-index: 0;
+    
+        width: 1197px;
+        height: 1197px;
+    
+        background-image: url(../image/elipses.svg);
+    }
+
     .review_title {
         width: 690px;
         padding-top: 87px;
@@ -187,6 +209,12 @@ input[type="radio"]:checked ~ label:after {
 }
 
 @media (min-width: 1024px) {
+
+    .reviews::after {
+        top: 393px;
+        left: -360px;
+    }
+
     .review_laptop-container {
         position: relative;
         width: 1024px;
@@ -261,6 +289,11 @@ input[type="radio"]:checked ~ label:after {
 }
 
 @media (min-width: 1920px) {
+    .reviews::after {
+        top: 600px;
+        left: 200px;
+    }
+
     .review_title {
         font-size: 58px;
         line-height: 75px;
