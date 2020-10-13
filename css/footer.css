@@ -42,6 +42,12 @@
     display: flex;
 }
 
+.contacts_social a:hover,
+.contacts_social a:focus,
+.contacts_social a:active {
+    border-bottom: 1px solid black;
+}
+
 .contacts_vk svg{
     margin-top: 10px;
     margin-left: 10px;
