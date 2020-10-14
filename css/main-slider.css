@@ -16,7 +16,7 @@
 
 .main-slider_sliders {
     display: flex;
-    width: 1920px;
+    width: 1600px;
     padding: 0;
 }
 
@@ -230,7 +230,7 @@
     }
 
     .main-slider_sliders {
-        width: 5220px;
+        width: 4350px;
     }
 
     .main-slider_content {
@@ -367,7 +367,7 @@
     }
 
     .main-slider_sliders {
-        width: 6390px;
+        width: 5325px;
     }
 
     .main-slider_content {
@@ -425,7 +425,7 @@
     }
 
     .main-slider_sliders {
-        width: 6960px;
+        width: 5800px;
     }
 
     .main-slider_content {

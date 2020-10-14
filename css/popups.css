@@ -1,0 +1,103 @@
+@keyframes bounce {
+    0% {
+      transform: translateY(-2000px);
+    }
+
+    70% {
+      transform: translateY(30px);
+    }
+
+    90% {
+      transform: translateY(-10px);
+    }
+
+    100% {
+      transform: translateY(0);
+    }
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    width: 300px;
+    margin-left: -150px;
+    z-index: 10;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.75);
+}
+
+.modal-show {
+    display: block;
+    animation: bounce .6s;
+}
+
+.popup .stages_form-container {
+    width: 100%;
+    padding-top: 0;
+}
+
+.popup form {
+    margin-top: 0;
+}
+
+.popup_checkbox-label {
+    position: relative;
+    display: flex;
+    width: 25px;
+    height: 25px;
+
+    border: 1px solid rgba(1, 1, 1, 0.2);
+}
+
+.popup input[type="checkbox"]:checked ~ .popup_checkbox-label::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+
+    width: 25px;
+    height: 25px;
+
+    background-image: url(../image/check.svg);
+    background-repeat: no-repeat;
+    background-position: 2px 4px;
+}
+
+input[type="checkbox"]:focus ~ .popup_checkbox-label {
+    border: 1px solid #262626;
+}
+
+@media (min-width: 768px) {
+    .popup {
+        top: 50px;
+        width: 390px;
+        margin-left: -195px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .popup {
+        top: 90px;
+        width: 450px;
+        margin-left: -225px;
+    }
+
+    .popup form {
+        max-width: 450px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .popup {
+        top: 120px;
+        width: 540px;
+        margin-left: -270px;
+    }
+
+    .popup form {
+        max-width: 540px;
+        width: 540px;
+    }
+}
+
