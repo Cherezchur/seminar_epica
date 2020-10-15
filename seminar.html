@@ -116,12 +116,12 @@
     </div>
     <div class="seminar-des_container">
         <div class="seminar-des_buttons">
-            <button class="seminar-des_button button active-button">описание</button>
-            <button class="seminar-des_button button">учебный план</button>
-            <button class="seminar-des_button button">документы</button>
+            <button class="seminar-des_button tabButton seminar-des_button--des button active-button">описание</button>
+            <button class="seminar-des_button tabButton seminar-des_button--steps button">учебный план</button>
+            <button class="seminar-des_button tabButton seminar-des_button--doc button">документы</button>
         </div>
         <ul class="seminar-des_tabs-list">
-            <li class="seminar-des_item active-tab">
+            <li class="seminar-des_item tab seminar-des_item--des active-tab">
                 <p class="seminar-des_description">
                     Обзорный семинар о бренде Epica Professional: история
                     создания бренда, продуктовые линии, состав, специфика
@@ -142,13 +142,13 @@
                     <strong>Стоимость: </strong><span class="seminar-des_price">Бесплатно</span>
                 </p>
             </li>
-            <li class="seminar-des_item">
+            <li class="seminar-des_item seminar-des_item--steps">
                 <p><strong class="seminar-des_stage-time">11:00-13:00</strong> – Теоретическая часть</p>
                 <p><strong class="seminar-des_stage-time">13:00-13:30</strong> – Перерыв</p>
                 <p><strong class="seminar-des_stage-time">13:30-16:30</strong> – Практическая часть</p>
                 <p><strong class="seminar-des_stage-time">16:30-17:00</strong> – Розыгрыш призов, вручение сертификатов и фото с технологом</p>
             </li>
-            <li class="seminar-des_item">
+            <li class="seminar-des_item seminar-des_item--doc">
                 <picture>
                     <source srcset="image/sertificateDes.jpg" media="(min-width: 1024px)">
                     <source srcset="image/sertificateTab.jpg" media="(min-width: 768px)">
@@ -221,20 +221,8 @@
 	</div>
 </footer>
 
-<script>
-	var navMane = document.querySelector(".header_menu");
-    var navToggle = document.querySelector(".header_navbar-toggler");
-
-    navToggle.addEventListener("click", function(){
-    	if (navMane.classList.contains("header_menu--opend")) {
-		  navMane.classList.remove("header_menu--opend");
-		  navMane.classList.add("header_menu--closed");
-        } else {
-		  navMane.classList.add("header_menu--opend");
-		  navMane.classList.remove("header_menu--closed");
-        }
-      });
-</script>
+<script src="js/jquere.js"></script>
+<script src="js/main.js"></script>
 
 </body>
 </html>

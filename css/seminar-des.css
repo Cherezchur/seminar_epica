@@ -43,20 +43,18 @@
     margin-top: 0;
 }
 
-.seminar-des_buttons .active-button {
+.active-button {
     background-color: white;
     border-bottom: none;
 }
 
-.seminar-des_container .seminar-des_button:hover,
-.seminar-des_container .seminar-des_button:focus {
+.seminar-des_button:hover,
+.seminar-des_button:focus {
     color: black;
     background-color: white;
-    border-bottom: 1px solid  rgba(1, 1, 1, 0.1);
 }
 
-.seminar-des_buttons .active-button:hover,
-.seminar-des_buttons .active-button:focus {
+.seminar-des_button:active {
     border-bottom: none;
 }
 
@@ -193,7 +191,7 @@
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1920px) {
 
     .seminar-des_header {
         margin-top: -52px;
