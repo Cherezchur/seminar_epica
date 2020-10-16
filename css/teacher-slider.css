@@ -108,9 +108,10 @@
     background-color: transparent;
     border: 1px solid rgba(1,1,1,0.5);
     border-radius: 50%;
+    outline: none;
 }
 
-.teachers_dots-list .active {
+.teachers_dots-list .active-dot {
     padding: 0;
     margin-right: 11px;
     width: 11px;
@@ -219,6 +220,14 @@
 
     .teachers_item {
         width: 285px;
+    }
+
+    .laptop-dot {
+        display: none;
+    }
+
+    .desctop-dot {
+        display: block;
     }
 
     .teachers_arrow-prev::after {

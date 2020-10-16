@@ -22,17 +22,30 @@ let slider = document.querySelector(".slider-container"),
     lastTrf = --slides.length * slideWidth,
     posThreshold = slides.offsetWidth * 0.35,
     trfRegExp = /([-0-9.]+(?=px))/,
+    dots = document.querySelectorAll(".teachers_dot"),
+
     getEvent = function() {
       return (event.type.search('touch') !== -1) ? event.touches[0] : event;
     },
     slide = function() {
+
+        //активные точки
+        indexDot = $(".teachers_dot").get(slideIndex),
+        indexDot.classList.add("active-dot");
+        indexDot.classList.remove("dot");
+        $(".dot").removeClass("active-dot");
+        indexDot.classList.add("dot");
+
       if (transition) {
         sliderTrack.style.transition = 'transform .5s';
       }
+
       sliderTrack.style.transform = `translate3d(-${slideIndex * slideWidth}px, 0px, 0px)`;
   
       prev.classList.toggle('disabled', slideIndex === 0);
-      next.classList.toggle('disabled', slideIndex === 7);
+      next.classList.toggle('disabled', slideIndex === 7);      
+
+      console.log(slideIndex);
     },
     swipeStart = function() {
       let evt = getEvent();
@@ -236,16 +249,15 @@ let slider = document.querySelector(".slider-container"),
         slide();
     })
 
-//   arrows.addEventListener('click', function() {
-//     let target = event.target;
-  
-//     if (target === next) {
-//       slideIndex++;
-//     } else if (target === prev) {
-//       slideIndex--;
-//     } else {
-//       return;
-//     }
-  
-//     slide();
-//   });
+    //событие клика по точкам
+
+    $(".teachers_dot").click(
+        function(){
+            $(this).addClass("active-dot").removeClass("dot");
+            $(".dot").removeClass("active-dot");
+            $(this).addClass("dot");
+
+            slideIndex = $(this).index();
+            slide();
+        }
+    )

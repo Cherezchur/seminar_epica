@@ -3,8 +3,8 @@
 }
 .seminar::after {
     content: "";
-    width: 100%;
-    height: 100%;
+    width: 409px;
+    height: 395px;
     
     position: absolute;
     top: 86.5%;
@@ -151,6 +151,8 @@
     }
 
     .seminar::after {
+        width: 727px;
+        height: 661px;
         background-image: url(../image/phoneTablet.png);
         top: 87.5%;
         left: 16px;
@@ -177,8 +179,8 @@
         content: "";
 
         position: absolute;
-        width: 100%;
-        height: 100%;
+        width: 546px;
+        height: 489px;
 
         background-image: url(../image/phoneLaptop.png);
         background-repeat: no-repeat;
