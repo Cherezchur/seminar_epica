@@ -45,8 +45,8 @@
 .review_container {
     position: relative;
     margin: 0 auto;
-    width: 360px;
-    overflow-x: auto;
+    width: 322px;
+    overflow: hidden;
     z-index: 2;
 }
 
@@ -54,13 +54,11 @@
     display: flex;
     width: 2520px;
     margin: 0 auto;
-    overflow-x: auto;
+    overflow: hidden;
 }
 
 .review_item-slide {
     width: 322px;
-    margin-left: 19px;
-    margin-right: 19px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
