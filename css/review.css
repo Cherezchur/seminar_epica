@@ -95,12 +95,16 @@
     padding-bottom: 70px;
 }
 
-.review_number {
+.review_numbers {
     position: relative;
 }
 
-.review_number::before {
-    content: "01";
+.review_numbers li {
+    display: none;
+}
+
+.review_numbers .active-number {
+    display: block;
 }
 
 .review_number::after {
@@ -136,28 +140,6 @@
     box-sizing: content-box;
     border: 2px solid rgba(1,1,1,1);
 }
-
-/* .review_dot::after {
-    content: "";
-
-    position: absolute;
-    top: 5px;
-    left: 0;
-    width: 10px;
-    height: 10px;
-
-    box-sizing: border-box;
-    background-color: transparent;
-    border: 1px solid rgba(1,1,1,0.5);
-    border-radius: 50%;
-}
-
-input[type="radio"]:checked ~ label:after {
-    top: 3px;
-    left: -2px;
-    box-sizing: content-box;
-    border: 2px solid rgba(1,1,1,1);
-} */
 
 @media (min-width: 768px) {
 

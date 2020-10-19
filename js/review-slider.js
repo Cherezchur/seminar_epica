@@ -19,8 +19,6 @@ let sliderRe = document.querySelector(".review_slider"),
     lastTrfRe = --slidesRe.length * slideWidthRe,
     posThresholdRe = slidesRe.offsetWidth * 0.35,
     trfRegExpRe = /([-0-9.]+(?=px))/,
-    content = ("content", (slideIndexRe + 1)),
-    slideNumber = document.querySelector(".review_number::before"),
 
     getEvent1 = function() {
        return (event.type.search('touch') !== -1) ? event.touches[0] : event;
@@ -35,14 +33,17 @@ let sliderRe = document.querySelector(".review_slider"),
       $(".dot-buffer").removeClass("review_active-dot");
       indexDotRe.classList.add("dot-buffer");
 
-      //порядковое число точки
+      //порядковое число слайда
 
-      
+      indexNumber = $(".review_number").get(slideIndexRe);
+      indexNumber.classList.add("active-number");
+      indexNumber.classList.remove("review_number");
+      $(".review_number").removeClass("active-number");
+      indexNumber.classList.add("review_number");
 
-      $(slideNumber).css("content", "slideIndexRe");
-
-      console.log($(slideNumber).css("content"));
-      console.log("контент:", content);
+      if (slideIndexRe === 0) {
+        $(slideNumber).css("content", "02");
+      }
 
       if (transitionRe) {
         sliderTrackRe.style.transition = 'transform .5s';
