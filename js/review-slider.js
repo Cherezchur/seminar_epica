@@ -19,19 +19,30 @@ let sliderRe = document.querySelector(".review_slider"),
     lastTrfRe = --slidesRe.length * slideWidthRe,
     posThresholdRe = slidesRe.offsetWidth * 0.35,
     trfRegExpRe = /([-0-9.]+(?=px))/,
-    dotsRe = document.querySelectorAll(".review_control-list");
+    content = ("content", (slideIndexRe + 1)),
+    slideNumber = document.querySelector(".review_number::before"),
 
     getEvent1 = function() {
        return (event.type.search('touch') !== -1) ? event.touches[0] : event;
      },
     slideRe = function() {
 
-        // //активные точки
-        // indexDot = $(".teachers_dot").get(slideIndex),
-        // indexDot.classList.add("active-dot");
-        // indexDot.classList.remove("dot");
-        // $(".dot").removeClass("active-dot");
-        // indexDot.classList.add("dot");
+      //активные точки
+
+      indexDotRe = $(".review_dot").get(slideIndexRe);
+      indexDotRe.classList.add("review_active-dot");
+      indexDotRe.classList.remove("dot-buffer");
+      $(".dot-buffer").removeClass("review_active-dot");
+      indexDotRe.classList.add("dot-buffer");
+
+      //порядковое число точки
+
+      
+
+      $(slideNumber).css("content", "slideIndexRe");
+
+      console.log($(slideNumber).css("content"));
+      console.log("контент:", content);
 
       if (transitionRe) {
         sliderTrackRe.style.transition = 'transform .5s';
@@ -200,3 +211,29 @@ let sliderRe = document.querySelector(".review_slider"),
   sliderTrackRe.addEventListener('transitionend', () => allowSwipeRe = true);
   sliderRe.addEventListener('touchstart', swipeStart1);
   sliderRe.addEventListener('mousedown', swipeStart1);
+
+  //событие клика по точкам
+
+  $(".review_dot").click(
+    function(){
+        $(this).addClass("review_active-dot").removeClass("dot-buffer");
+        $(".dot-buffer").removeClass("review_active-dot");
+        $(this).addClass("dot-buffer");
+
+        slideIndexRe = $(this).index();
+        slideRe();
+    }
+  )
+
+  $(".review_dot").focus(
+    function(){
+        $(this).addClass("review_active-dot").removeClass("dot-buffer");
+        $(".dot-buffer").removeClass("review_active-dot");
+        $(this).addClass("dot-buffer");
+
+        slideIndexRe = $(this).index();
+        slideRe();
+    }
+  )
+
+

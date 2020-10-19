@@ -32,13 +32,21 @@
     bottom: 5px;
     padding-left: 15px;
     padding-right: 15px;
-    overflow: scroll;
+    overflow-y: scroll;
     width: 100%;
+    height: auto;
 
     color: white;
     text-align: left;
 
     background-color: rgba(0, 0, 0, 0.75);
+    scrollbar-width: none;
+}
+
+.seminar_text-content::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    background-color: transparent;
 }
 
 .seminar_text-content h3 {
@@ -51,7 +59,8 @@
 }
 
 .seminar_text-content:active .seminar_hidden,
-.seminar_text-content:hover .seminar_hidden {
+.seminar_text-content:hover .seminar_hidden,
+.seminar_text-content:focus .seminar_hidden {
     display: block;
 }
 
@@ -60,10 +69,6 @@
     box-sizing: border-box;
     top: 0;
     bottom: 5px;
-}
-
-.seminar_hidden {
-    display: none;
 }
 
 .seminar_hidden a {
@@ -133,10 +138,13 @@
 @media (min-width: 768px) {
     .seminar_text-content {
         overflow: auto;
+        padding-left: 24px;
     }
 
     .seminar_text-content h3 {
         min-height: 100px;
+        font-size: 26px;
+        line-height: 34px;
     }
 
     .seminar_text-content:active,

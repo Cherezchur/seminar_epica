@@ -92,3 +92,36 @@ $(".seminar-des_button--doc").focus(
         $(".seminar-des_item--doc").addClass("tab");
     }
 )
+
+//события дял отктытия и скрытия информации о семинарах
+
+
+$(".seminar_text-content").click(function(){
+    let hiddenText = $(this).find(".seminar_hidden");
+    hiddenText.removeClass("visually-hidden");
+})
+
+$(".seminar-text_content").hover(function(){
+    let hiddenText = $(this).find(".seminar_hidden");
+    hiddenText.removeClass("visually-hidden");
+})
+
+$(".seminar_button").focus(function(){
+    let hiddenText = $(this).parent(".seminar_hidden");
+    hiddenText.removeClass("visually-hidden");
+})
+
+$(".seminar_button").blur(function(){
+    let hiddenText = $(this).parent(".seminar_hidden");
+    hiddenText.addClass("visually-hidden");
+})
+
+$(document).click( function(e){
+    if ( $(e.target).closest('.seminar_text-content').length ) {
+        // клик внутри элемента 
+        return;
+    }
+    // клик снаружи элемента 
+    let hiddenText = $(this).find(".seminar_hidden");
+    hiddenText.addClass("visually-hidden");
+});

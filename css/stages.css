@@ -171,6 +171,11 @@ input[type="checkbox"]:focus ~ .checkbox-label {
     line-height: 24px;
 }
 
+.checkbox-link a {
+    color: #252525;
+    text-decoration: none;
+}
+
 .form_button {
     width: 100%;
     margin-top: 17px;

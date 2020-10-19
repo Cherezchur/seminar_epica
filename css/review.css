@@ -92,7 +92,6 @@
     justify-content: start;
     width: 322px;
     margin: 0 auto;
-    margin-top: 9px;
     padding-bottom: 70px;
 }
 
@@ -117,20 +116,28 @@
 }
 
 .review_control-list {
-    display: flex;
-    margin-left: 42px;
-}
-
-.review_control-list input {
-    display: none;
+    margin-left: 39px;
 }
 
 .review_dot {
     position: relative;
-    margin-right: 20px;
+    margin-right: 6px;
+    padding: 0;
+    width: 10px;
+    height: 10px;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 1px solid rgba(1,1,1,0.5);
+    border-radius: 50%;
+    outline: none;
 }
 
-.review_dot::after {
+.review_active-dot {
+    box-sizing: content-box;
+    border: 2px solid rgba(1,1,1,1);
+}
+
+/* .review_dot::after {
     content: "";
 
     position: absolute;
@@ -150,7 +157,7 @@ input[type="radio"]:checked ~ label:after {
     left: -2px;
     box-sizing: content-box;
     border: 2px solid rgba(1,1,1,1);
-}
+} */
 
 @media (min-width: 768px) {
 

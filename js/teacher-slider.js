@@ -204,6 +204,8 @@ let slider = document.querySelector(".slider-container"),
   slider.addEventListener('touchstart', swipeStart);
   slider.addEventListener('mousedown', swipeStart);
 
+  //событие клика по стрелкам
+
     if (window.matchMedia('(min-width: 1920px)').matches){
 
         next.addEventListener("click", function() {
@@ -252,6 +254,17 @@ let slider = document.querySelector(".slider-container"),
     //событие клика по точкам
 
     $(".teachers_dot").click(
+        function(){
+            $(this).addClass("active-dot").removeClass("dot");
+            $(".dot").removeClass("active-dot");
+            $(this).addClass("dot");
+
+            slideIndex = $(this).index();
+            slide();
+        }
+    )
+
+    $(".teachers_dot").focus(
         function(){
             $(this).addClass("active-dot").removeClass("dot");
             $(".dot").removeClass("active-dot");

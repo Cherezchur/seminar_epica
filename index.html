@@ -269,11 +269,11 @@
 			<img class="seminar_image" src="image/epica-obzor.jpg" alt="Модель с черными кудрявыми волосами">
 			<div class="seminar_text-content">
 				<h3>Обзорный семинар "Epica-professional - качество как основа"</h3>
-				<div class="seminar_hidden">
+				<div class="seminar_hidden visually-hidden active-text">
 					<p>Семинар о фундаментальных знаниях колористики и продуктов окрашивания от epica-professional: знакомство с фитокератиновой системой окрашивания</p>
 					<p class="seminar_text-info">Продолжительность: <span class="seminar_time">6</span> часов</p>
 					<p class="seminar_text-info">Стоимость: <s class="seminar_old-price">3 500<s> руб.</s></s> <span class="seminar_new-price">2 500</span> руб.</p>
-					<a class="button" href="#">Подробнее</a>
+					<a class="seminar_button button" href="#">Подробнее</a>
 				</div>
 			</div>
 		</li>
@@ -281,11 +281,11 @@
 			<img class="seminar_image" src="image/colorshade.jpg" alt="Модель с вьющимися волосами красно-розового оттенка">
 			<div class="seminar_text-content">
 				<h3>Колористика: теория цвета "Colorshade"</h3>
-				<div class="seminar_hidden">
+				<div class="seminar_hidden visually-hidden">
 					<p>Семинар о фундаментальных знаниях колористики и продуктов окрашивания от epica-professional: знакомство с фитокератиновой системой окрашивания</p>
 					<p class="seminar_text-info">Продолжительность: <span class="seminar_time">6</span> часов</p>
 					<p class="seminar_text-info">Стоимость: <s class="seminar_old-price">3 500<s> руб.</s></s> <span class="seminar_new-price">2 500</span> руб.</p>
-					<a class="button" href="#">Подробнее</a>
+					<a class="seminar_button button" href="#">Подробнее</a>
 				</div>
 			</div>
 		</li>
@@ -293,11 +293,11 @@
 			<img class="seminar_image" src="image/coloristics.jpg" alt="Модель с короткой стрижкой светло-фиолетового цвета">
 			<div class="seminar_text-content">
 				<h3>Колористика: цветовые корректоры</h3>
-				<div class="seminar_hidden">
+				<div class="seminar_hidden visually-hidden">
 					<p>Семинар о фундаментальных знаниях колористики и продуктов окрашивания от epica-professional: знакомство с фитокератиновой системой окрашивания</p>
 					<p class="seminar_text-info">Продолжительность: <span class="seminar_time">6</span> часов</p>
 					<p class="seminar_text-info">Стоимость: <s class="seminar_old-price">3 500<s> руб.</s></s> <span class="seminar_new-price">2 500</span> руб.</p>
-					<a class="button" href="#">Подробнее</a>
+					<a class="seminar_button button" href="#">Подробнее</a>
 				</div>
 			</div>
 		</li>
@@ -305,11 +305,11 @@
 			<img class="seminar_image" src="image/sedina.jpg" alt="Модель с короткой стрижкой седого цвета">
 			<div class="seminar_text-content">
 				<h3>Теория цвета - седина и ее особенности</h3>
-				<div class="seminar_hidden">
+				<div class="seminar_hidden visually-hidden">
 					<p>Семинар о фундаментальных знаниях колористики и продуктов окрашивания от epica-professional: знакомство с фитокератиновой системой окрашивания</p>
 					<p class="seminar_text-info">Продолжительность: <span class="seminar_time">6</span> часов</p>
 					<p class="seminar_text-info">Стоимость: <s class="seminar_old-price">3 500<s> руб.</s></s> <span class="seminar_new-price">2 500</span> руб.</p>
-					<a class="button" href="#">Подробнее</a>
+					<a class="seminar_button button" href="#">Подробнее</a>
 				</div>
 			</div>
 		</li>
@@ -317,11 +317,11 @@
 			<img class="seminar_image" src="image/blond.jpg" alt="Модель с длинными вьющимися волосами цвета блонд">
 			<div class="seminar_text-content">
 				<h3>Теория цвета - блонд</h3>
-				<div class="seminar_hidden">
+				<div class="seminar_hidden visually-hidden">
 					<p>Семинар о фундаментальных знаниях колористики и продуктов окрашивания от epica-professional: знакомство с фитокератиновой системой окрашивания</p>
 					<p class="seminar_text-info">Продолжительность: <span class="seminar_time">6</span> часов</p>
 					<p class="seminar_text-info">Стоимость: <s class="seminar_old-price">3 500<s> руб.</s></s> <span class="seminar_new-price">2 500</span> руб.</p>
-					<a class="button" href="#">Подробнее</a>
+					<a class="seminar_button button" href="#">Подробнее</a>
 				</div>
 			</div>
 		</li>
@@ -722,8 +722,15 @@
 			</div>
 			<div class="review_control-container">
 				<div class="review_number"></div>
-				<ul class="review_control-list">
-					<li>
+				<div class="review_control-list">
+					<button class="review_dot dot-buffer review_active-dot"></button>
+					<button class="review_dot dot-buffer"></button>
+					<button class="review_dot dot-buffer"></button>
+					<button class="review_dot dot-buffer"></button>
+					<button class="review_dot dot-buffer"></button>
+					<button class="review_dot dot-buffer"></button>
+					<button class="review_dot dot-buffer"></button>
+					<!-- <li>
 						<input name="radio" type="radio" id="radio1" class="review_radio" checked>
 						<label class="review_dot" for="radio1"></label>
 					</li>
@@ -750,8 +757,8 @@
 					<li>
 						<input name="radio" type="radio" id="radio7" class="review_radio">
 						<label class="review_dot" for="radio7"></label>
-					</li>
-				</ul>
+					</li> -->
+				</div>
 			</div>
 		</div>
 	</div>

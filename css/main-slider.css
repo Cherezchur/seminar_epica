@@ -5,6 +5,13 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    scrollbar-width: none;
+}
+
+.main-slider::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.0);
 }
 
 .main-slider_slick {
@@ -364,6 +371,7 @@
 
     .main-slider_slick {
         width: 1064px;
+        margin-left: 0;
     }
 
     .main-slider_sliders {
@@ -385,6 +393,7 @@
 
     .main-slider .main-slider_dots {
         padding-left: 10px;
+        margin-left: auto;
     }
 
     .main-slider_title, 
@@ -415,6 +424,9 @@
 }
 
 @media (min-width: 1920px) {
+    .main-slaider {
+
+    }
 
     .main-slider::after {
         left: 630px;
@@ -422,6 +434,14 @@
 
     .main-slider_slick {
         width: 1158px;
+        margin: 0 auto;
+    }
+
+    .main-slider_dots {
+        position: absolute;
+        top: 20px;
+        left: 16%;
+        margin-top: 198px;
     }
 
     .main-slider_sliders {
