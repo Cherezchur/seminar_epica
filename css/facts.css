@@ -103,7 +103,7 @@
 @media (min-width: 768px) {
 
     .facts {
-        padding-bottom: 110px;
+        padding-bottom: 68px;
     }
     
     .facts_title {
@@ -161,6 +161,10 @@
 }
 
 @media (min-width: 1024px) {
+    .facts {
+        padding-bottom: 110px;
+    }
+
     .facts_title {
         width: 930px;
         padding-top: 84px;

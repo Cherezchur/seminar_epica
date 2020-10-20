@@ -16,6 +16,7 @@
 
 .header_menu {
     background-color: #5c4c69;
+    margin-top: -2px;
 }
 
 .image-logo {
@@ -43,7 +44,7 @@
 .header_navbar-toggler {
     display: block;
     padding-top: 22px;
-    padding-bottom: 24px;
+    padding-bottom: 28px;
     width: 23px;
     background-color: transparent;
     border: none;
@@ -54,7 +55,7 @@
     content: "";
 
     position: absolute;
-    top: 115px;
+    top: 86px;
     left: 5.5%;
     width: 23px;
     height: 2px;
@@ -73,7 +74,7 @@
     content: "";
 
     position: absolute;
-    top: 120px;
+    top: 100px;
     left: 5.5%;
     width: 23px;
     height: 2px;
@@ -85,7 +86,7 @@
     content: "";
 
     position: absolute;
-    top: 120px;
+    top: 100px;
     left: 5.5%;
     width: 23px;
     height: 2px;
@@ -133,9 +134,13 @@
     .header_nav {
         height: 100px;
     }
+
     .header_container-nav {
         display: flex;
         justify-content: space-between;
+
+        padding-left: 38px;
+        padding-right: 38px;
     }
 
     .header_image-logo {
@@ -152,13 +157,46 @@
         margin-top: 26px;
     }
 
+    .contacts-title {
+        margin-top: 3px;
+    }
+
     .header_brand-contacts .contacts-adres {
         margin: 0 auto;
+    }
+
+    .header_menu {
+        margin-top: 0;
     }
 
     .header_container-menu::after {
         top: 116px;
         left: 5.5%;
+    }
+
+    .header_menu--opend .header_container-menu::after {
+        top: 124px;
+        left: 38px;
+    }
+
+    .header_navbar-toggler::after {
+        top: 116px;
+        left: 38px;
+    }
+
+    .header_navbar-toggler::before {
+        top: 124px;
+        left: 38px;
+    }
+
+    .header_menu--opend .header_navbar-toggler::before {
+        top: 122px;
+        left: 38px;
+    }
+    
+    .header_menu--opend .header_navbar-toggler::after {
+        top: 122px;
+        left: 38px;
     }
     
     .header_menu--opend .header_container-menu::before {
@@ -180,6 +218,16 @@
         padding-bottom: 22px;
         width: 23px;
         opacity: 0;
+    }
+
+    .header_container-nav {
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+
+    .header_container-menu {
+        padding-left: 55px;
+        padding-right: 55px;
     }
 
     .header_container-menu::after {
@@ -205,7 +253,17 @@
 @media (min-width: 1920px) {
     .header_nav .header_container-nav {
         max-width: 1100px;
+        margin: 0 auto;
     }
+
+    .contacts-title {
+        margin-top: 5px;
+    }
+
+    .header_container-menu {
+        max-width: 1100px;
+    }
+
     .header_main-list {
         justify-content: space-around;
     }

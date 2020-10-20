@@ -7,8 +7,12 @@
 }
 
 .stages_title {
-    margin: 0;
-    padding-top: 53px;
+    padding-top: 28px;
+}
+
+.stages_container {
+    padding-left: 19px;
+    padding-right: 19px;
 }
 
 .stages_list {
@@ -84,8 +88,6 @@
 
 .form {
     margin: 0 auto;
-    /* margin-left: 20px;
-    margin-right: 20px; */
     margin-top: 40px;
     padding: 28px;
 
@@ -96,7 +98,6 @@
 .form legend {
     margin: 0 auto;
     margin-bottom: 20px;
-    /* margin-top: 5px; */
     font-family: "SolomonSans-Bold", sans-serif;
     font-size: 20px;
     line-height: 26px;
@@ -194,6 +195,11 @@ input[type="checkbox"]:focus ~ .checkbox-label {
         background-position: -125px 605px;
     }
 
+    .stages_container {
+        padding-left: 38px;
+        padding-right: 38px;
+    }
+
     .stages_list .stages_item:nth-child(2n){
         margin-left: 120px;
     }
@@ -203,7 +209,11 @@ input[type="checkbox"]:focus ~ .checkbox-label {
     }
 
     .stages_item .stages_direction {
-        width: 70%;
+        width: 73.8%;
+    }
+
+    .stages_item .stages_direction-even {
+        width: 68%;
     }
 
     .form {
@@ -211,8 +221,9 @@ input[type="checkbox"]:focus ~ .checkbox-label {
         margin-left: auto;
         margin-right: auto;
         margin-top: 90px;
-        padding: 45px;
-        padding-top: 30px;
+        padding: 40px;
+        padding-top: 36px;
+        padding-bottom: ;
         box-sizing: border-box;
     }
 
@@ -243,6 +254,10 @@ input[type="checkbox"]:focus ~ .checkbox-label {
     .stages {
         background-image: url(../image/paintDesktop.png);
         background-position: 277px -89px;
+    }
+
+    .stages_title {
+        padding-top: 53px;
     }
 
     .stages_container {

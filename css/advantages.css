@@ -24,12 +24,16 @@
 .advantages_title {
     padding-top: 0;
     padding-bottom: 0;
+    padding-left: 19px;
+    padding-right: 19px;
     margin-bottom: 48px;
     margin-top: 0;
 }
 
 .advantages_list {
     padding-bottom: 51px;
+    padding-left: 19px;
+    padding-right: 19px;
 }
 
 .advantages_item {
@@ -39,7 +43,7 @@
     position: relative;
 
     padding-left: 132px;
-    padding-right: 14px;
+    padding-right: 28px;
     margin-bottom: 30px;
     min-height: 175px;
 
@@ -171,12 +175,14 @@
 
 @media (min-width: 1024px) {
     .background-image {
+        padding-bottom: 71px;
         background: url(../image/bgAdvantagesLap.png) no-repeat;
-        background-position: bottom -32px left -107px;
+        background-position: bottom -12px left -107px;
     }
 
     .background-image::after {
-        height: 51%;
+        height: 50%;
+        bottom: 65px;
     }
 
     .advantages {
@@ -188,7 +194,12 @@
     } */
 
     .advantages_list {
-        margin-left: 307px;
+        margin-left: 316px;
+        padding: 0;
+    }
+
+    .advantages_item {
+        width: 290px;
     }
 }
 

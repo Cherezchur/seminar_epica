@@ -27,8 +27,8 @@
     height: 10px;
 
     position: absolute;
-    top: 101px;
-    left: 20.5px;
+    top: 106px;
+    left: 17.5px;
 
     background-image: url(../image/prev.svg);
     background-position: 0 0;
@@ -44,8 +44,8 @@
     height: 10px;
 
     position: absolute;
-    top: 108px;
-    right: 20.5px;
+    top: 100px;
+    right: 18.5px;
 
     background-image: url(../image/prev.svg);
     background-position: 0 0;
@@ -64,6 +64,7 @@
 .teachers_container {
     overflow: hidden;
     width: 210px;
+    scrollbar-width: none;
 }
 
 .teachers_container::-webkit-scrollbar {
@@ -97,7 +98,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 6px;
+    margin-top: 32px;
+    padding-left: 10px;
 }
 
 .teachers_dot {
@@ -126,8 +128,12 @@
 }
 
 @media (min-width: 768px) {
+    .teachers {
+        margin-bottom: 87px;
+    }
+
     .teachers_title {
-        margin-top: 34px;
+        margin-top: 38px;
     }
 
     .slider-container {
@@ -147,12 +153,12 @@
     }
 
     .teachers_name {
-        margin-top: 10px;
+        margin-top: 5px;
     }
 
     .teachers_arrow-prev::after {
         top: 165px;
-        right: 85px;
+        left: -46px;
     }
     
     .teachers_arrow-next::after {
@@ -165,6 +171,11 @@
     .teachers {
         margin-bottom: 88px;
     }
+
+    .teachers_title {
+        margin-top: 19px;
+    }
+
     .slider-container {
         margin-top: 88px;
     }
@@ -180,6 +191,10 @@
         width: 320px;
     }
 
+    .teachers_name {
+        margin-top: 10px;
+    }
+
     .teachers_arrow-next,
     .teachers_arrow-prev {
         width: 32px;
@@ -187,7 +202,7 @@
 
     .teachers_arrow-prev::after {
         top: 153px;
-        right: -7px;
+        left: 2px;
     }
     
     .teachers_arrow-next::after {
@@ -204,7 +219,7 @@
     }
 
     .teachers_dots-list {
-        margin-top: 13px;
+        margin-top: 29px;
         margin-left: 8px;
     }
 }

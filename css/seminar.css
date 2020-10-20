@@ -7,8 +7,8 @@
     height: 395px;
     
     position: absolute;
-    top: 86.5%;
-    left: -22px;
+    top: 85%;
+    left: -33px;
 
     background-image: url(../image/phoneMobile.png);
     background-repeat: no-repeat;
@@ -16,9 +16,14 @@
 
 /* исправить наложние на весь контент */ 
 
+.seminar_list {
+    padding-left: 19px;
+    padding-right: 19px;
+}
+
 .seminar_item {
     position: relative;
-    margin-bottom: 10px;
+    margin-bottom: 14px;
     overflow: hidden;
 }
 
@@ -32,7 +37,7 @@
     bottom: 5px;
     padding-left: 15px;
     padding-right: 15px;
-    overflow-y: scroll;
+    overflow: scroll;
     width: 100%;
     height: auto;
 
@@ -49,16 +54,24 @@
     background-color: transparent;
 }
 
+.seminar_item .height-text {
+    height: 100%;
+}
+
+.seminar_text-content:hover {
+    cursor: pointer;
+}
+
 .seminar_text-content h3 {
     font-family: "SolomonSans-Bold", sans-serif;
     font-size: 20px;
     line-height: 26px;
 
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 13px;
 }
 
-.seminar_text-content:active .seminar_hidden,
+/* .seminar_text-content:active .seminar_hidden,
 .seminar_text-content:hover .seminar_hidden,
 .seminar_text-content:focus .seminar_hidden {
     display: block;
@@ -69,7 +82,7 @@
     box-sizing: border-box;
     top: 0;
     bottom: 5px;
-}
+} */
 
 .seminar_hidden a {
     display: inline-block;
@@ -103,6 +116,8 @@
     background-color: #be91e1;
     background-size: contain;
     margin-bottom: 30px;
+    margin-top: 25px;
+    height: 322px;
 }
 
 .seminar_form-container {
@@ -136,34 +151,78 @@
 }
 
 @media (min-width: 768px) {
+    .seminar h2 {
+        padding-top: 86px;
+        padding-bottom: 66px;
+    }
+
+    .seminar_list {
+        padding-left: 38px;
+        padding-right: 38px;
+    }
+
+    .seminar_item {
+        margin-bottom: 23px;
+    }
+
     .seminar_text-content {
-        overflow: auto;
-        padding-left: 24px;
+        /* overflow: auto; */
+        padding-left: 32px;
+        min-height: 100px;
     }
 
     .seminar_text-content h3 {
-        min-height: 100px;
         font-size: 26px;
         line-height: 34px;
+        margin-top: 15px;
+        margin-bottom: 18px;
     }
 
-    .seminar_text-content:active,
+    .seminar_form-container {
+        margin-top: 243px;
+        margin-left: 303px;
+        margin-right: 150px;
+    }
+
+    .seminar_list .seminar_help-form {
+        background-color: #be91e1;
+        background-size: contain;
+        margin-top: 60px;
+        margin-bottom: 30px;
+        height: 690px;
+    }
+
+    .seminar_help-title {
+        font-family: "SolomonSans-Bold", sans-serif;
+        font-size: 34px;
+        line-height: 44px;
+        margin-bottom: 18px;
+    }
+
+    /* .seminar_text-content:active,
     .seminar_text-content:hover {
         top: auto;
         bottom: 5px;
-    }
+    } */
 
-    .seminar_text-content:active h3,
+    /* .seminar_text-content:active h3,
     .seminar_text-content:hover h3 {
         min-height: auto;
-    }
+    } */
 
     .seminar::after {
         width: 727px;
         height: 661px;
         background-image: url(../image/phoneTablet.png);
-        top: 87.5%;
-        left: 16px;
+        top: 86.5%;
+        left: 43px;
+    }
+
+    .seminar_button {
+        padding-top: 17px;
+        padding-bottom: 20px;
+        padding-left: 36px;
+        padding-right: 36px;
     }
 }
 
@@ -176,11 +235,19 @@
 
 @media (min-width: 1024px) {
 
+    .seminar h2 {
+        padding-top: 85px;
+        padding-bottom: 64px;
+    }
+
     .seminar_list {
         position: relative;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+
+        padding-left: 45px;
+        padding-right: 45px;
     }
 
     .seminar_list::after {
@@ -188,7 +255,7 @@
 
         position: absolute;
         width: 546px;
-        height: 489px;
+        height: 478px;
 
         background-image: url(../image/phoneLaptop.png);
         background-repeat: no-repeat;
@@ -201,7 +268,8 @@
     }
 
     .seminar_item {
-        width: 48.4%;
+        width: 450px;
+        height: 450;
         margin-bottom: 25px;
     }
 
@@ -209,31 +277,42 @@
         display: flex;
         flex-direction: column;
         align-items: start;
-        margin-top: 25%;
-        margin-bottom: 31%;
-        margin-left: 36%;
+        margin-top: 52px;
+        margin-left: 160px;
+        margin-right: 0;
     }
 
     .seminar_text-content {
-        height: 141px;
+        min-height: 140px;
+        height: auto;
         padding-left: 30px;
         padding-right: 30px;
     }
 
-    .seminar_text-content:active,
+    /* .seminar_text-content:active,
     .seminar_text-content:hover {
         height: auto;
-    }
+    } */
 
     .seminar_text-content h3 {
         padding-top: 5px;
         font-size: 26px;
         line-height: 34px;
+        min-height: 1px;
+
+        margin-top: 10px;
+        margin-bottom: 24px;
+    }
+
+    .seminar_list .seminar_help-form {
+        margin-top: 0;
+        height: 450px;
     }
 
     .seminar_help-title {
         font-size: 34px;
         line-height: 44px;
+        margin-top: 59px;
         padding-right: 50px;
     }
 }

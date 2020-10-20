@@ -160,6 +160,11 @@
 
     .copyright_container .logo-link {
         width: 17%;
+        margin-right: 13px;
+    }
+
+    .copyright {
+        margin-top: 16px;
     }
 }
 

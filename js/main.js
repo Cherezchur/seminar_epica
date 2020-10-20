@@ -35,24 +35,48 @@ navLink.addEventListener("focus", function(){
 
 //события дял отктытия и скрытия информации о семинарах
 
-$(".seminar_text-content").click(function(){
-    let hiddenText = $(this).find(".seminar_hidden");
-    hiddenText.removeClass("visually-hidden");
-})
-
-$(".seminar-text_content").hover(function(){
-    let hiddenText = $(this).find(".seminar_hidden");
-    hiddenText.removeClass("visually-hidden");
-})
+// $(".seminar_text-content").click(function(){
+//     let hiddenText = $(this).find(".seminar_hidden");
+//     hiddenText.removeClass("visually-hidden");
+// })
 
 $(".seminar_button").focus(function(){
     let hiddenText = $(this).parent(".seminar_hidden");
     hiddenText.removeClass("visually-hidden");
+    if (window.matchMedia('(max-width: 767px)').matches){
+        let hiddenBlock = hiddenText.parent(".seminar_text-content");
+        hiddenBlock.addClass("height-text");
+    }
+    console.log(hiddenBlock);
 })
 
 $(".seminar_button").blur(function(){
     let hiddenText = $(this).parent(".seminar_hidden");
     hiddenText.addClass("visually-hidden");
+    if (window.matchMedia('(max-width: 767px)').matches){
+        let hiddenBlock = hiddenText.parent(".seminar_text-content");
+        hiddenBlock.removeClass("height-text");
+    }
+})
+
+$(".seminar_text-content").mouseenter(function(){
+    let hiddenText = $(this).find(".seminar_hidden");
+    if (hiddenText.hasClass("visually-hidden")) {
+        hiddenText.removeClass("visually-hidden");
+        if (window.matchMedia('(max-width: 767px)').matches){
+            $(this).addClass("height-text");
+        }
+    }
+})
+
+$(".seminar_text-content").mouseleave(function(){
+    let hiddenText = $(this).find(".seminar_hidden");
+    if (hiddenText.hasClass("visually-hidden")) {
+        return;
+    } else {
+        hiddenText.addClass("visually-hidden");
+        $(this).removeClass("height-text");
+    }
 })
 
 $(document).click( function(e){
