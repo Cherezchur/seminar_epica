@@ -247,7 +247,7 @@
 
     .teachers_arrow-prev::after {
         top: 127px;
-        right: 14px;
+        left: -19px;
     }
     
     .teachers_arrow-next::after {

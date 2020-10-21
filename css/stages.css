@@ -16,6 +16,8 @@
 }
 
 .stages_list {
+    width: 322px;
+    margin: 0 auto;
     padding: 0;
 }
 
@@ -77,6 +79,8 @@
 }
 
 .stages_caption {
+    width: 322px;
+    margin: 0 auto;
     font-family: "SolomonSans-MediumItalic", sans-serif;
     color: #808080;
     text-align: left;
@@ -84,6 +88,8 @@
 
 .stages_form-container {
     padding-top: 7px;
+    width: 322px;
+    margin: 0 auto;
 }
 
 .form {
@@ -195,9 +201,23 @@ input[type="checkbox"]:focus ~ .checkbox-label {
         background-position: -125px 605px;
     }
 
+    .stages_title {
+        padding-top: 54px;
+    }
+
     .stages_container {
         padding-left: 38px;
         padding-right: 38px;
+    }
+
+    .stages_caption {
+        width: 692px;
+        margin: 0 auto;
+    }
+
+    .stages_list {
+        width: 692px;
+        margin: 0 auto;
     }
 
     .stages_list .stages_item:nth-child(2n){
@@ -216,6 +236,11 @@ input[type="checkbox"]:focus ~ .checkbox-label {
         width: 68%;
     }
 
+    .stages_form-container {
+        width: 692px;
+        margin: 0 auto;
+    }
+
     .form {
         max-width: 450px;
         margin-left: auto;
@@ -223,7 +248,6 @@ input[type="checkbox"]:focus ~ .checkbox-label {
         margin-top: 90px;
         padding: 40px;
         padding-top: 36px;
-        padding-bottom: ;
         box-sizing: border-box;
     }
 
@@ -265,6 +289,8 @@ input[type="checkbox"]:focus ~ .checkbox-label {
         justify-content: space-between;
         padding-left: 47px;
         padding-right: 47px;
+        width: 930px;
+        margin: 0 auto;
     }
 
     .stages_steps-container,
@@ -278,6 +304,7 @@ input[type="checkbox"]:focus ~ .checkbox-label {
 
     .stages_list {
         padding: 0;
+        width: 450px;
     }
 
     .stages_item .stages_direction {
@@ -309,10 +336,11 @@ input[type="checkbox"]:focus ~ .checkbox-label {
     }
 
     .stages_caption {
-        padding: 0;
+        width: 450px;
     }
 
     .stages_form-container {
+        margin-right: 0;
         max-width: 450px;
         padding-top: 0;
     }
@@ -333,12 +361,6 @@ input[type="checkbox"]:focus ~ .checkbox-label {
 
 @media (min-width: 1440px) {
     .stages {
-        background-position: 540px -89px;
-    }
-}
-
-@media (min-width: 1440px) {
-    .stages {
         background-position: 660px -89px;
     }
 }
@@ -348,8 +370,26 @@ input[type="checkbox"]:focus ~ .checkbox-label {
         background-position: 750px -89px;
     }
 
+    .stages_container {
+        width: 1110px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .stages_list {
+        width: 520px;
+    }
+
     .stages_steps-container {
         max-width: 510px;
+    }
+
+    .stages_caption {
+        width: 520px;
+    }
+
+    .stages_form-container {
+        max-width: 442px;
     }
 
     .stages_list .stages_item:nth-child(2n) {
@@ -382,5 +422,11 @@ input[type="checkbox"]:focus ~ .checkbox-label {
 
     .stages_item:nth-child(2n) .stages_number-container::after {
         left: 180px;
+    }
+}
+
+@media (min-width: 2200px) {
+    .stages {
+        background-position: 975px -89px;
     }
 }

@@ -31,6 +31,9 @@
 }
 
 .advantages_list {
+    width: 322px;
+    margin: 0 auto;
+
     padding-bottom: 51px;
     padding-left: 19px;
     padding-right: 19px;
@@ -43,7 +46,7 @@
     position: relative;
 
     padding-left: 132px;
-    padding-right: 28px;
+    padding-right: 20px;
     margin-bottom: 30px;
     min-height: 175px;
 
@@ -149,7 +152,7 @@
     }
 
     .advantages {
-        margin-top: 190px;
+        margin-top: 186px;
     }
     
     .advantages_title {
@@ -161,15 +164,18 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        width: 692px;
+        margin: 0 auto;
     }
 
     .advantages_item {
-        width: 45.5%;
+        width: 330px;
         box-sizing: border-box;
+        padding-right: 30px;
     }
 
     .advantages_item:nth-child(2n) {
-        margin-left: 4.8%;
+        margin-left: 30px;
     }
 }
 
@@ -189,12 +195,13 @@
         margin-top: 180px;
     }
 
-    /* .advantages_title {
-        margin-left: 307px;
-    } */
+    .advantages_container-list {
+        width: 930px;
+        margin: 0 auto;
+    }
 
     .advantages_list {
-        margin-left: 316px;
+        margin-left: 280px;
         padding: 0;
     }
 
@@ -217,8 +224,15 @@
 
 @media (min-width: 1920px) {
     .background-image {
-        background-position: bottom -20px left 310px;
+        background-position: bottom -12px left 318px;
+        padding-bottom: 130px;
     } 
+
+    .background-image::after {
+        height: 50%;
+        bottom: 68px;
+    }
+
     .advantages_title {
         margin-left: 0;
         margin-bottom: 80px;
@@ -228,14 +242,21 @@
         margin-top: 186px;
     }
 
+    .advantages_container-list {
+        width: 1110px;
+        margin: 0 auto;
+    }
+
     .advantages_list {
-        margin-left: 375px;
+        margin: 0 auto;
+        margin-right: 0;
+        width: 730px;
     }
 
     .advantages_item {
         padding-left: 160px;
         padding-right: 30px;
-        width: 48%;
+        width: 350px;
         box-sizing: border-box;
     }
 

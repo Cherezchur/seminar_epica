@@ -295,7 +295,7 @@
         width: 940px;
         margin-left: 106px;
         padding-top: 67px;
-        padding-bottom: 80px;
+        padding-bottom: 76px;
     }
 
     .review_list-slider {
@@ -304,6 +304,7 @@
 
     .review_item-slide {
         width: 940px;
+        padding-bottom: 5px;
     }
 
     .review_item-slide img {
@@ -319,7 +320,7 @@
     .review_control-container {
         width: 350px;
         left: 719px;
-        top: 583px;
+        top: 594px;
     }
 
     .review_slider::after {
