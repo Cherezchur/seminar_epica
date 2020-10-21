@@ -41,9 +41,9 @@ let sliderRe = document.querySelector(".review_slider"),
       $(".review_number").removeClass("active-number");
       indexNumber.classList.add("review_number");
 
-      if (slideIndexRe === 0) {
-        $(slideNumber).css("content", "02");
-      }
+      // if (slideIndexRe === 0) {
+      //   $(slideNumber).css("content", "02");
+      // }
 
       if (transitionRe) {
         sliderTrackRe.style.transition = 'transform .5s';

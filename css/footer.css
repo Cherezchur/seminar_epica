@@ -42,6 +42,10 @@
     display: flex;
 }
 
+.contacts_social a {
+    outline: none;
+}
+
 .contacts_social a:hover,
 .contacts_social a:focus,
 .contacts_social a:active {
