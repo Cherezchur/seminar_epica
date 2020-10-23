@@ -19,6 +19,10 @@
     position: relative;
     width: 75px;
     height: 210px;
+
+    border: none;
+    background-color: transparent;
+    outline: none;
 }
 
 .teachers_arrow-prev::after {
@@ -56,8 +60,10 @@
 
 .teachers_arrow-next:hover::after,
 .teachers_arrow-next:active::after,
+.teachers_arrow-next:focus::after,
 .teachers_arrow-prev:hover::after,
-.teachers_arrow-prev:active::after {
+.teachers_arrow-prev:active::after,
+.teachers_arrow-prev:focus::after {
     opacity: 1;
 }
 

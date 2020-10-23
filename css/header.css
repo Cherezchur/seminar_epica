@@ -45,7 +45,8 @@
     display: block;
     padding-top: 22px;
     padding-bottom: 28px;
-    width: 23px;
+    margin-left: 27px;
+    width: 30px;
     background-color: transparent;
     border: none;
     outline: none;
@@ -56,7 +57,7 @@
 
     position: absolute;
     top: 86px;
-    left: 5.5%;
+    left: 30px;
     width: 23px;
     height: 2px;
 
@@ -75,7 +76,7 @@
 
     position: absolute;
     top: 100px;
-    left: 5.5%;
+    left: 30px;
     width: 23px;
     height: 2px;
 
@@ -87,7 +88,7 @@
 
     position: absolute;
     top: 100px;
-    left: 5.5%;
+    left: 30px;
     width: 23px;
     height: 2px;
 
@@ -177,6 +178,10 @@
     .header_menu--opend .header_container-menu::after {
         top: 124px;
         left: 38px;
+    }
+
+    .header_navbar-toggler {
+        margin-left: 35px;
     }
 
     .header_navbar-toggler::after {

@@ -127,6 +127,7 @@
 .main-slider_dots {
     display: flex;
     justify-content: center;
+    order: 2;
     margin-top: 15px;
     margin-left: 10px;
     margin-right: 10px;
@@ -165,8 +166,10 @@
 
 .main-slider_prev-slide:hover,
 .main-slider_prev-slide:active,
+.main-slider_prev-slide:focus,
 .main-slider_next-slide:hover,
-.main-slider_next-slide:active {
+.main-slider_next-slide:active,
+.main-slider_next-slide:focus {
     opacity: 1;
 }
 
@@ -191,6 +194,7 @@
 
     background-color: transparent;
     border: none;
+    outline: none;
 }
 
 .main-slider_list-number button::after {
@@ -238,6 +242,8 @@
     }
 
     .main-slider_slick {
+        position: relative;
+        z-index: 2;
         order: 2;
         width: 869px;
     }
@@ -292,8 +298,9 @@
         flex-direction: column;
         display: block;
         margin-right: 0;
+        margin-left: 0;
         margin-bottom: 15px;
-        margin-top: 5px;
+        margin-top: 15px;
     }
 
     .main-slider_list-number li {
@@ -303,6 +310,10 @@
     .main-slider_list-number li::after {
         width: 1px;
         height: 100%;
+    }
+
+    .main-slider_list-number button::after {
+        transform: rotate(90deg);
     }
 
     .main-slider_prev-slide {
@@ -396,6 +407,10 @@
 
         width: 500px;
         height: 500px;
+    }
+
+    .main-slider_list-number {
+        margin-top: 15px;
     }
 
     .main-slider .main-slider_dots {

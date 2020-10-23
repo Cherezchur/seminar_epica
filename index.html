@@ -111,6 +111,17 @@
 <section id="banner">
 	<h2 class="visually-hidden">Баннеры семинаров Epica Professional</h2>
 	<div class="main-slider">
+		<div class="main-slider_dots container">
+			<button class="main-slider_prev-slide"></button>
+			<div class="main-slider_list-number">
+				<button class="main-slider_number slide-number main-slider_active-number" role="presentation">01</button>
+				<button class="main-slider_number slide-number" role="presentation">02</button>
+				<button class="main-slider_number slide-number" role="presentation">03</button>
+				<button class="main-slider_number slide-number" role="presentation">04</button>
+				<button class="main-slider_number slide-number" role="presentation">05</button>
+			</div>
+			<button class="main-slider_next-slide"></button>
+		</div>
 		<div class="main-slider_slick">
 			<ul class="main-slider_sliders">
 				<li class="main-slider_content">
@@ -125,7 +136,7 @@
 							<li class="main-slider_item">Стойкое окрашивание и причины его использования</li>
 						</ul>
 						<div class="main-slider_date">На ближайшие даты семинаров нет</div>
-						<button class="main-slider_button button ">Записаться</button>
+						<button class="main-slider_button button popup-show">Записаться</button>
 					</div>
 					<div class="main-slider_image">
 						<picture>
@@ -151,7 +162,7 @@
 							<li class="main-slider_item">Стойкое окрашивание и причины его использования</li>
 						</ul>
 						<div class="main-slider_date">На ближайшие даты семинаров нет</div>
-						<button class="main-slider_button button">Записаться</button>
+						<button class="main-slider_button button popup-show">Записаться</button>
 					</div>
 					<div class="main-slider_image">
 						<picture>
@@ -177,7 +188,7 @@
 							<li class="main-slider_item">Стойкое окрашивание и причины его использования</li>
 						</ul>
 						<div class="main-slider_date">На ближайшие даты семинаров нет</div>
-						<button class="main-slider_button button">Записаться</button>
+						<button class="main-slider_button button popup-show">Записаться</button>
 					</div>
 					<div class="main-slider_image">
 						<picture>
@@ -203,7 +214,7 @@
 							<li class="main-slider_item">Стойкое окрашивание и причины его использования</li>
 						</ul>
 						<div class="main-slider_date">На ближайшие даты семинаров нет</div>
-						<button class="main-slider_button button">Записаться</button>
+						<button class="main-slider_button button popup-show">Записаться</button>
 					</div>
 					<div class="main-slider_image">
 						<picture>
@@ -229,7 +240,7 @@
 							<li class="main-slider_item">Стойкое окрашивание и причины его использования</li>
 						</ul>
 						<div class="main-slider_date">На ближайшие даты семинаров нет</div>
-						<button class="main-slider_button button">Записаться</button>
+						<button class="main-slider_button button popup-show">Записаться</button>
 					</div>
 					<div class="main-slider_image">
 						<picture>
@@ -244,17 +255,6 @@
 					</ul>
 				</li>
 			</ul>
-		</div>
-		<div class="main-slider_dots container">
-			<button class="main-slider_prev-slide"></button>
-			<div class="main-slider_list-number">
-				<button class="main-slider_number slide-number main-slider_active-number" role="presentation">01</button>
-				<button class="main-slider_number slide-number" role="presentation">02</button>
-				<button class="main-slider_number slide-number" role="presentation">03</button>
-				<button class="main-slider_number slide-number" role="presentation">04</button>
-				<button class="main-slider_number slide-number" role="presentation">05</button>
-			</div>
-			<button class="main-slider_next-slide"></button>
 		</div>
 	</div>
 </section>
@@ -272,7 +272,7 @@
 						<p >Продолжительность: <span class="seminar_time">6</span> часов</p>
 						<p class="seminar_text-info">Стоимость: <s class="seminar_old-price">3 500<s> руб.</s></s> <span class="seminar_new-price">2 500</span> руб.</p>
 					</div>
-					<a class="seminar_button button" href="#">Подробнее</a>
+					<a class="seminar_button button" href="seminar.html">Подробнее</a>
 				</div>
 			</div>
 		</li>
@@ -335,7 +335,7 @@
 		<li class="seminar_item seminar_help-form">
 			<div class="seminar_form-container">
 				<h3 class="seminar_help-title">Нужна консультация?</h3>
-				<button class="button">задать вопрос</button>
+				<button class="button popup-show">задать вопрос</button>
 			</div>
 		</li>
 	</ul>
@@ -429,9 +429,9 @@
 <section id="teachers" class="teachers">
 	<h2 class="section-title teachers_title">Наши преподаватели</h2>
 	<div class="slider-container">
-		<div class="teachers_arrow-prev arrows">
+		<button class="teachers_arrow-prev arrows">
 			<span class="visually-hidden">следующий слайд</span>
-		</div>
+		</button>
 		<div class="teachers_container">
 			<ul class="teachers_list">
 				<li class="teachers_item">
@@ -516,19 +516,35 @@
 				</li>
 			</ul>
 		</div>
-		<div class="teachers_arrow-next arrows">
+		<button class="teachers_arrow-next arrows">
 			<span class="visually-hidden">предыдущий слайд</span>
-		</div>
+		</button>
 	</div>
 	<div class="teachers_dots-list">
-		<button class="teachers_dot dot active-dot laptop-dot desctop-dot" role="button"></button>
-		<button class="teachers_dot dot laptop-dot desctop-dot" role="button"></button>
-		<button class="teachers_dot dot laptop-dot desctop-dot" role="button"></button>
-		<button class="teachers_dot dot laptop-dot desctop-dot" role="button"></button>
-		<button class="teachers_dot dot laptop-dot desctop-dot" role="button"></button>
-		<button class="teachers_dot dot laptop-dot" role="button"></button>
-		<button class="teachers_dot dot" role="button"></button>
-		<button class="teachers_dot dot" role="button"></button>
+		<button class="teachers_dot dot active-dot laptop-dot desctop-dot" role="button">
+			<span class="visually-hidden">1</span>
+		</button>
+		<button class="teachers_dot dot laptop-dot desctop-dot" role="button">
+			<span class="visually-hidden">2</span>
+		</button>
+		<button class="teachers_dot dot laptop-dot desctop-dot" role="button">
+			<span class="visually-hidden">3</span>
+		</button>
+		<button class="teachers_dot dot laptop-dot desctop-dot" role="button">
+			<span class="visually-hidden">4</span>
+		</button>
+		<button class="teachers_dot dot laptop-dot desctop-dot" role="button">
+			<span class="visually-hidden">5</span>
+		</button>
+		<button class="teachers_dot dot laptop-dot" role="button">
+			<span class="visually-hidden">6</span>
+		</button>
+		<button class="teachers_dot dot" role="button">
+			<span class="visually-hidden">7</span>
+		</button>
+		<button class="teachers_dot dot" role="button">
+			<span class="visually-hidden">8</span>
+		</button>
 	</div>
 </section>
 
@@ -624,7 +640,7 @@
 		</picture>
 		<div class="submit_container">
 			<h2 class="section-title submit_title">Количество мест ограничено, запишись<span class="text-off"> сейчас!</span></h2>
-			<button class="submit_button button">оставить заявку</button>
+			<button class="submit_button button popup-show">оставить заявку</button>
 		</div>
 	</section>
 
@@ -740,41 +756,27 @@
 					<li class="review_number">07</li>
 				</ul>
 				<div class="review_control-list">
-					<button class="review_dot dot-buffer review_active-dot"></button>
-					<button class="review_dot dot-buffer"></button>
-					<button class="review_dot dot-buffer"></button>
-					<button class="review_dot dot-buffer"></button>
-					<button class="review_dot dot-buffer"></button>
-					<button class="review_dot dot-buffer"></button>
-					<button class="review_dot dot-buffer"></button>
-					<!-- <li>
-						<input name="radio" type="radio" id="radio1" class="review_radio" checked>
-						<label class="review_dot" for="radio1"></label>
-					</li>
-					<li>
-						<input name="radio" type="radio" id="radio2" class="review_radio">
-						<label class="review_dot" for="radio2"></label>
-					</li>
-					<li>
-						<input name="radio" type="radio" id="radio3" class="review_radio">
-						<label class="review_dot" for="radio3"></label>
-					</li>
-					<li>
-						<input name="radio" type="radio" id="radio4" class="review_radio">
-						<label class="review_dot" for="radio4"></label>
-					</li>
-					<li>
-						<input name="radio" type="radio" id="radio5" class="review_radio">
-						<label class="review_dot" for="radio5"></label>
-					</li>
-					<li>
-						<input name="radio" type="radio" id="radio6" class="review_radio">
-						<label class="review_dot" for="radio6"></label>
-					</li>
-					<li>
-						<input name="radio" type="radio" id="radio7" class="review_radio">
-						<label class="review_dot" for="radio7"></label>
-					</li> -->
+					<button class="review_dot dot-buffer review_active-dot">
+						<span class="visually-hidden">1</span>
+					</button>
+					<button class="review_dot dot-buffer">
+						<span class="visually-hidden">2</span>
+					</button>
+					<button class="review_dot dot-buffer">
+						<span class="visually-hidden">3</span>
+					</button>
+					<button class="review_dot dot-buffer">
+						<span class="visually-hidden">4</span>
+					</button>
+					<button class="review_dot dot-buffer">
+						<span class="visually-hidden">5</span>
+					</button>
+					<button class="review_dot dot-buffer">
+						<span class="visually-hidden">6</span>
+					</button>
+					<button class="review_dot dot-buffer">
+						<span class="visually-hidden">7</span>
+					</button>
 				</div>
 			</div>
 		</div>
@@ -846,7 +848,7 @@
 					</a>
 				</div>
 			</div>
-			<button class="contacts_button button">Хочу поучаствовать</button>
+			<button class="contacts_button button popup-show">Хочу поучаствовать</button>
 		</div>
 	</section>
 	<div class="copyright_container">
@@ -889,6 +891,9 @@
 			<button type="submit" class="form_button button">Записаться!</button>
 		</form>
 	</div>
+	<button class="popup_close-button">
+		<span class="visually-hidden">закрыть</span>
+	</button>
 </section>
 
 <script src="js/jquere.js"></script>

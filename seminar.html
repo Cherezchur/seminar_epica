@@ -73,7 +73,7 @@
 <header class="header">
 	<nav class="header_nav">
 		<div class="container header_container-nav">
-			<a class="logo-link" href="https://seminar.epica-professional.com/main/#head">
+			<a class="logo-link" href="#">
 				<picture>
 					<source id="logo" srcset="image/logo2.png" media="(min-width: 768px)">
 					<img class="image-logo" src="image/logo1.png" alt="Логотип Epica-professional">
@@ -81,22 +81,18 @@
 			</a>
 			<div class="header_brand-contacts">
 				<a class="contacts-phone" href="tel:+74959267659">+7 (495) 926-76-59</a>
-				<a class="contacts-phone"></a>
-				<a class="contacts-phone"></a>
-				<p class="contacts-adres">г. Москва, ул. Привольная, д. 70, к. 1</p>
+				<p class="contacts-title">г. Москва, ул. Привольная, д. 70, к. 1</p>
 			</div>
 		</div>
 	</nav>
 	<nav class="header_menu">
 		<div class="container header_container-menu">
 			<button class="header_navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-				<div class="oi oi-menu">
-                    <span class="visually-hidden">Меню</span>
-				</div>
+				<span class="visually-hidden">Меню</span>
 			</button>
 
 			<div class="header_container-list" id="ftco-nav">
-				<ul class="header_main-list">
+				<ul class="header_main-list seminar-nav-list visually-hidden">
 					<!--                        <li class="nav-item active"><a href="#main" class="nav-link">Главная</a></li>-->
 					<li class="nav-item"><a href="https://seminar.epica-professional.com/main/#seminary" class="nav-link">Семинары</a></li>
 					<li class="nav-item"><a href="https://seminar.epica-professional.com/main/#write" class="nav-link">Записаться</a></li>
@@ -223,6 +219,15 @@
 
 <script src="js/jquere.js"></script>
 <script src="js/main.js"></script>
+<script>
+	var seminarNavList = document.querySelector(".seminar-nav-list");
+	navToggle.addEventListener("click", function(){
+		if (navMane.classList.contains("header_menu--opend")) {
+			seminarNavList.style.cssText = "margin-bottom: 50px;";
+		}
+	})
+
+</script>
 
 </body>
 </html>

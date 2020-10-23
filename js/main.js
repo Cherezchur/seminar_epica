@@ -35,10 +35,6 @@ navLink.addEventListener("focus", function(){
 
 //события дял отктытия и скрытия информации о семинарах
 
-// $(".seminar_text-content").click(function(){
-//     let hiddenText = $(this).find(".seminar_hidden");
-//     hiddenText.removeClass("visually-hidden");
-// })
 
 $(".seminar_button").focus(function(){
     let hiddenText = $(this).parent(".seminar_hidden");
@@ -147,3 +143,16 @@ $(".seminar-des_button--doc").focus(
         tabActive($(".seminar-des_item--doc"))
     }
 )
+
+//вызов popup
+
+$(".popup_close-button").click(function(){
+    $(".popup").removeClass("modal-show");
+})
+function popupOpend () {
+    $(".popup").addClass("modal-show")
+}
+
+$(".popup-show").click(function(){
+    popupOpend();
+})

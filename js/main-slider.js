@@ -22,7 +22,8 @@ let sliderMa = document.querySelector(".main-slider"),
     trfRegExpMa = /([-0-9.]+(?=px))/,
     nextSlideMa = document.querySelector(".main-slider_next-slide"),
     prevSlideMa = document.querySelector(".main-slider_prev-slide"),
-    buttonSlide = document.querySelector(".main-slider_button"),
+    slideNumber = document.querySelectorAll(".main-slider_number"),
+    // buttonSlide = document.querySelector(".main-slider_button"),
     // dots = document.querySelectorAll(".teachers_dot"),
 
     getEventMa = function() {
@@ -42,7 +43,6 @@ let sliderMa = document.querySelector(".main-slider"),
       }
 
       console.log(slideIndexMa),
-
 
       sliderTrackMa.style.transform = `translate3d(-${slideIndexMa * slideWidthMa}px, 0px, 0px)`;  
     },
@@ -202,135 +202,19 @@ let sliderMa = document.querySelector(".main-slider"),
       slideMa();
   })
 
-  //событие фокуса на кнопки записаться
- /*
-  $(".main-slider_button").focus(function() {
-      
-    let thisIndex = $(this).parent("main-slider_content");
-    console.log(thisIndex.index());
-    console.log(slideIndexMa);
-    slideMa();
-    return;
-})
-*/
-/*
-  $(document).ready(function () {
+  //событие фокуса и клика на номер слайдера
 
-    var timeList = 300;
-    var TimeView = 5000;
-    var RadioBut = true;
-    
-    $('.main-slider_content').hide().eq(0).show();
-    var slideNum = 0;
-    var slideTime;
-    slideCount = $(".main-slider_content").length;
-    
-    var animSlide = function(arrow){
-        clearTimeout(slideTime); 
-            
-        function slideDirectionHide(slideFloatNum, directTo){
-                $('.main-slider_content').eq(slideFloatNum).fadeOut(timeList); 
-        }
-    
-        function slideDirectionShow(slideFloatNum, directTo, pause){
-                $('.main-slider_content').eq(slideFloatNum).fadeIn(timeList, function() {
-                    if(pause == true) { rotator(); }
-                }); 
-        }
-        
-        var old_slideNum = slideNum;
-            
-        if(arrow == "next"){
-                slideDirectionHide(slideNum, "left");
-                if(slideNum == (slideCount-1)){slideNum=0;}
-                else{slideNum++}
-                slideDirectionShow(slideNum, "right", true);
-                }
-        else if(arrow == "prew")
-        {
-                slideDirectionHide(slideNum, "right");
-                if(slideNum == 0){slideNum=slideCount-1;}
-                else{slideNum-=1}
-                slideDirectionShow(slideNum, "left", true);
-        }else{
-                    if(arrow !== old_slideNum)
-                    { 
-                        if(arrow > old_slideNum)
-                        {
-                            slideDirectionHide(slideNum, "left");
-                            slideNum = arrow;
-                            slideDirectionShow(slideNum, "right", true);
-                        }else if(arrow < old_slideNum) {
-                            slideDirectionHide(slideNum, "right");
-                            slideNum = arrow;
-                            slideDirectionShow(slideNum, "left", true);
-                        }
-    
-                    }
-        }
-    
-        $(".ctrl-select.active").removeClass("active");
-        $('.ctrl-select').eq(slideNum).addClass('active');
+  $(".main-slider_number").click(
+    function(){
+      slideIndexMa = $(this).index();
+      console.log(slideIndexMa);
+      slideMa();
     }
-    
-    
-        if(RadioBut){
-        var linkArrow = $('<a id="prewBut" href="#">&lt;</a><a id="nextBut" href="#">&gt;</a>')
-            .prependTo('#slider');
-            $('#nextBut').click(function(){
-               animSlide("next");
-               return false;
-               })
-            $('#prewBut').click(function(){
-               animSlide("prew");
-               return false;
-               })
-        }
-            var addSpan ='';
-            $('.slide').each(function(index) {
-                   addSpan += '<span class = "ctrl-select">' + index + '</span>';
-               });
-            $('<div class ="Radio-But">' + addSpan +'</div>').appendTo('#slider-wrap');
-            $(".ctrl-select:first").addClass("active");
-            $('.ctrl-select').click(function(){
-            var goToNum = parseFloat($(this).text());
-            animSlide(goToNum);
-            });
-            var pause = false;
-            var rotator = function(){
-                   if(!pause){slideTime = setTimeout(function(){animSlide('next')}, TimeView);}
-                   }
-            $('#slider-wrap').hover(
-               function(){clearTimeout(slideTime); pause = true;},
-               function(){pause = false; rotator();
-               });
-            
-        var clicking = false;
-        var prevX;
-        $('.slide').mousedown(function(e){
-            clicking = true;
-            prevX = e.clientX;
-        });
-    
-        $('.slide').mouseup(function() {
-         clicking = false;
-        });
-    
-        $(document).mouseup(function(){
-            clicking = false;
-        });
-    
-        $('.slide').mousemove(function(e){
-            if(clicking == true)
-             {
-                 if(e.clientX < prevX) { animSlide("next"); clearTimeout(slideTime); }
-                 if(e.clientX > prevX) { animSlide("prew"); clearTimeout(slideTime); }
-               clicking = false;
-            }
-        });
-        $('.slide').hover().css('cursor', 'pointer');
-        rotator();  
-    
-    });
+  )
 
-    */
+  $(".main-slider_number").focus(
+    function(){
+      slideIndexMa = $(this).index();
+      slideMa();
+    }
+  )

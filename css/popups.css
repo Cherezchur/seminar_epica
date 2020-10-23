@@ -68,6 +68,51 @@ input[type="checkbox"]:focus ~ .popup_checkbox-label {
     border: 1px solid #262626;
 }
 
+.popup_close-button {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 25px;
+    height: 25px;
+    padding: 0;
+
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+}
+
+.popup_close-button::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 23px;
+    height: 2px;
+    background-color: #252525;
+    transform: rotate(45deg);
+}
+
+.popup_close-button::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 23px;
+    height: 2px;
+    background-color: #252525;
+    transform: rotate(-45deg);
+}
+
+.popup_close-button:focus::after,
+.popup_close-button:hover::after,
+.popup_close-button:active::after,
+.popup_close-button:focus::before,
+.popup_close-button:hover::before,
+.popup_close-button:active::before {
+    background-color: #be91e1;
+}
+
 @media (min-width: 768px) {
     .popup {
         top: 50px;
